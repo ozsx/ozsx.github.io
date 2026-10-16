@@ -1,17 +1,17 @@
-# RUST_OZ_V — Giáo trình Rust từ cơ bản đến chuyên sâu
+# 🦀 RUST_OZ — Giáo trình Rust từ cơ bản đến chuyên sâu
 
 *Tài liệu học lập trình Rust bằng tiếng Việt*
 
 | Thông tin | Chi tiết |
 | :--- | :--- |
-| Tác giả, biên soạn | Thái Việt |
-| Email | [ozsxe@icloud.com](mailto:ozsxe@icloud.com) |
-| GitHub | [github.com/ozsx](https://github.com/ozsx) |
-| Bản hiệu đính | 16/10/2026 |
-| Nền tảng ngôn ngữ | Rust Edition 2024; trình biên dịch Rust 1.85.0 trở lên |
+| ✍️ Tác giả, biên soạn | Thái Việt |
+| ✉️ Email | [ozsxe@icloud.com](mailto:ozsxe@icloud.com) |
+| 🐙 GitHub | [github.com/ozsx](https://github.com/ozsx) |
+| 🗓️ Bản hiệu đính | 16/10/2026 |
+| 🦀 Nền tảng ngôn ngữ | Rust Edition 2024; trình biên dịch Rust 1.85.0 trở lên |
 
 
-## Lời nói đầu
+## 🌟 Lời nói đầu
 
 Rust là ngôn ngữ lập trình hệ thống chú trọng hiệu năng, an toàn bộ nhớ và khả năng tổ chức phần mềm. Ngôn ngữ này phù hợp với các ứng dụng cần kiểm soát tài nguyên, từ công cụ dòng lệnh và dịch vụ mạng đến phần mềm nhúng.
 
@@ -25,7 +25,9 @@ Ba ý tưởng xuyên suốt giáo trình là:
 
 Sách gồm 24 chương, ba dự án thực hành và bảy phụ lục. Nội dung tham khảo *The Rust Programming Language*, *The Rust Reference*, *The Rust Edition Guide*, *Google Comprehensive Rust* và *Rust Course*. Đây là tài liệu biên soạn độc lập bằng tiếng Việt; danh mục nguồn nằm ở cuối sách.
 
-## Cách sử dụng giáo trình
+## 🧭 Cách sử dụng giáo trình
+
+> **🗺️ Chỉ dẫn học tập:** 🔎 Khái niệm · 💻 Mã mẫu · 🧪 Kiểm thử · ⚠️ Điểm cần chú ý · 🧠 Thử thách · 💡 Giải đáp · ✍️ Bài tập.
 
 - Học tuần tự chương 1–8 trước khi chuyển sang generics, trait và tổ chức dự án. Quyền sở hữu ở chương 5 là nền tảng cho các chương sau.
 - Ví dụ có `fn main()` là một chương trình riêng, trừ khi ghi rõ đường dẫn tệp trong dự án nhiều tệp. Các khối chỉ chứa câu lệnh `let` được đặt trong thân `main`; các định nghĩa hàm, kiểu và `impl` đặt ở cấp module. Không ghép mọi khối mã của một chương thành một tệp.
@@ -34,71 +36,71 @@ Sách gồm 24 chương, ba dự án thực hành và bảy phụ lục. Nội d
 - Lệnh shell được ghi rõ cho Bash hoặc PowerShell khi khác nhau. Chạy lệnh Cargo trong thư mục chứa `Cargo.toml`.
 - Ký hiệu độ phức tạp mô tả tốc độ tăng chi phí theo số phần tử; không phải cam kết thời gian chạy tuyệt đối. Trong các ví dụ số học, hãy chú ý miền giá trị và chính sách xử lý tràn số.
 
-## Mục lục
+## 🗺️ Mục lục
 
-- **[Phần I. Khởi động](#phan-i)**
-  - [Chương 1. Bắt đầu với Rust và hệ sinh thái Cargo](#chuong-01)
-  - [Chương 2. Dự án 1 — Trò chơi đoán số](#chuong-02)
-- **[Phần II. Nhập môn](#phan-ii)**
-  - [Chương 3. Biến, tính khả biến và phạm vi](#chuong-03)
-  - [Chương 4. Kiểu dữ liệu cơ bản, hàm và luồng điều khiển](#chuong-04)
-- **[Phần III. Quyền sở hữu và mượn](#phan-iii)**
-  - [Chương 5. Quyền sở hữu và mượn](#chuong-05)
-- **[Phần IV. Kiểu phức hợp và khớp mẫu](#phan-iv)**
-  - [Chương 6. Chuỗi ký tự: String và &str](#chuong-06)
-  - [Chương 7. Kiểu dữ liệu tùy chỉnh: struct và enum](#chuong-07)
-  - [Chương 8. Khớp mẫu](#chuong-08)
-- **[Phần V. Phương thức, generics và trait](#phan-v)**
-  - [Chương 9. Phương thức, impl và thiết kế hướng đối tượng](#chuong-09)
-  - [Chương 10. Generics và trait](#chuong-10)
-- **[Phần VI. Tập hợp dữ liệu, chuyển đổi kiểu và xử lý lỗi](#phan-vi)**
-  - [Chương 11. Các cấu trúc dữ liệu tập hợp](#chuong-11)
-  - [Chương 12. Chuyển đổi kiểu dữ liệu](#chuong-12)
-  - [Chương 13. Xử lý lỗi](#chuong-13)
-- **[Phần VII. Tổ chức dự án, kiểm thử và minigrep](#phan-vii)**
-  - [Chương 14. Tổ chức dự án: package, crate, module và workspace](#chuong-14)
-  - [Chương 15. Kiểm thử tự động và tài liệu hóa](#chuong-15)
-  - [Chương 16. Dự án 2 — Công cụ dòng lệnh minigrep](#chuong-16)
-- **[Phần VIII. Vòng đời, lập trình hàm và con trỏ thông minh](#phan-viii)**
-  - [Chương 17. Vòng đời tham chiếu](#chuong-17)
-  - [Chương 18. Closure và iterator](#chuong-18)
-  - [Chương 19. Con trỏ thông minh và khả biến nội tại](#chuong-19)
-- **[Phần IX. Đồng thời và bất đồng bộ](#phan-ix)**
-  - [Chương 20. Lập trình đa luồng](#chuong-20)
-  - [Chương 21. Lập trình bất đồng bộ](#chuong-21)
-- **[Phần X. Chủ đề nâng cao và máy chủ web](#phan-x)**
-  - [Chương 22. Unsafe Rust, FFI và kiểu nâng cao](#chuong-22)
-  - [Chương 23. Siêu lập trình với macro](#chuong-23)
-  - [Chương 24. Dự án 3 — Máy chủ web với thread pool](#chuong-24)
-- **[Phần XI. Phụ lục tra cứu](#phan-xi)**
-  - [Phụ lục A. Từ khóa và định danh thô](#phu-luc-a)
-  - [Phụ lục B. Toán tử và ký hiệu cú pháp](#phu-luc-b)
-  - [Phụ lục C. Các trait có thể dẫn xuất](#phu-luc-c)
-  - [Phụ lục D. Công cụ phát triển và hệ sinh thái crate](#phu-luc-d)
-  - [Phụ lục E. Rust editions và chuyển đổi dự án](#phu-luc-e)
-  - [Phụ lục F. Quy ước đặt tên](#phu-luc-f)
-  - [Phụ lục G. Thuật ngữ và nguyên tắc thực hành](#phu-luc-g)
-- [Tài liệu tham khảo](#tai-lieu-tham-khao)
+- **[Phần I. 🏁 Khởi động](#phan-i)**
+  - [Chương 1. 🛠️ Bắt đầu với Rust và hệ sinh thái Cargo](#chuong-01)
+  - [Chương 2. 🎲 Dự án 1 — Trò chơi đoán số](#chuong-02)
+- **[Phần II. 🧱 Nhập môn](#phan-ii)**
+  - [Chương 3. 📦 Biến, tính khả biến và phạm vi](#chuong-03)
+  - [Chương 4. 🔢 Kiểu dữ liệu cơ bản, hàm và luồng điều khiển](#chuong-04)
+- **[Phần III. 🔑 Quyền sở hữu và mượn](#phan-iii)**
+  - [Chương 5. 🔑 Quyền sở hữu và mượn](#chuong-05)
+- **[Phần IV. 🧩 Kiểu phức hợp và khớp mẫu](#phan-iv)**
+  - [Chương 6. 🔤 Chuỗi ký tự: String và &str](#chuong-06)
+  - [Chương 7. 🧩 Kiểu dữ liệu tùy chỉnh: struct và enum](#chuong-07)
+  - [Chương 8. 🎯 Khớp mẫu](#chuong-08)
+- **[Phần V. ⚙️ Phương thức, generics và trait](#phan-v)**
+  - [Chương 9. 🔧 Phương thức, impl và thiết kế hướng đối tượng](#chuong-09)
+  - [Chương 10. 🧬 Generics và trait](#chuong-10)
+- **[Phần VI. 🗃️ Tập hợp dữ liệu, chuyển đổi kiểu và xử lý lỗi](#phan-vi)**
+  - [Chương 11. 🗃️ Các cấu trúc dữ liệu tập hợp](#chuong-11)
+  - [Chương 12. 🔄 Chuyển đổi kiểu dữ liệu](#chuong-12)
+  - [Chương 13. 🛡️ Xử lý lỗi](#chuong-13)
+- **[Phần VII. 🏗️ Tổ chức dự án, kiểm thử và minigrep](#phan-vii)**
+  - [Chương 14. 🗂️ Tổ chức dự án: package, crate, module và workspace](#chuong-14)
+  - [Chương 15. 🧪 Kiểm thử tự động và tài liệu hóa](#chuong-15)
+  - [Chương 16. 🔍 Dự án 2 — Công cụ dòng lệnh minigrep](#chuong-16)
+- **[Phần VIII. 🧠 Vòng đời, lập trình hàm và con trỏ thông minh](#phan-viii)**
+  - [Chương 17. ⏳ Vòng đời tham chiếu](#chuong-17)
+  - [Chương 18. 🔁 Closure và iterator](#chuong-18)
+  - [Chương 19. 🧭 Con trỏ thông minh và khả biến nội tại](#chuong-19)
+- **[Phần IX. ⚡ Đồng thời và bất đồng bộ](#phan-ix)**
+  - [Chương 20. 🧵 Lập trình đa luồng](#chuong-20)
+  - [Chương 21. ⚡ Lập trình bất đồng bộ](#chuong-21)
+- **[Phần X. 🚀 Chủ đề nâng cao và máy chủ web](#phan-x)**
+  - [Chương 22. ⚠️ Unsafe Rust, FFI và kiểu nâng cao](#chuong-22)
+  - [Chương 23. 🪄 Siêu lập trình với macro](#chuong-23)
+  - [Chương 24. 🌐 Dự án 3 — Máy chủ web với thread pool](#chuong-24)
+- **[Phần XI. 📚 Phụ lục tra cứu](#phan-xi)**
+  - [Phụ lục A. 🔑 Từ khóa và định danh thô](#phu-luc-a)
+  - [Phụ lục B. 🔣 Toán tử và ký hiệu cú pháp](#phu-luc-b)
+  - [Phụ lục C. 🧬 Các trait có thể dẫn xuất](#phu-luc-c)
+  - [Phụ lục D. 🧰 Công cụ phát triển và hệ sinh thái crate](#phu-luc-d)
+  - [Phụ lục E. 📅 Rust editions và chuyển đổi dự án](#phu-luc-e)
+  - [Phụ lục F. 📏 Quy ước đặt tên](#phu-luc-f)
+  - [Phụ lục G. 📖 Thuật ngữ và nguyên tắc thực hành](#phu-luc-g)
+- [📚 Tài liệu tham khảo](#tai-lieu-tham-khao)
 
 ---
 
 <a id="phan-i"></a>
 
-## Phần I. Khởi động
+## Phần I. 🏁 Khởi động
 
 ---
 
 <a id="chuong-01"></a>
 
-### Chương 1. Bắt đầu với Rust và hệ sinh thái Cargo
+### Chương 1. 🛠️ Bắt đầu với Rust và hệ sinh thái Cargo
 
 Ba công cụ chính để bắt đầu với Rust là `rustup` (quản lý toolchain), `rustc` (trình biên dịch) và `cargo` (quản lý dự án, phụ thuộc và quy trình build).
 
-#### 1.1. Cài đặt môi trường Rust qua `rustup`
+#### 1.1. 🛠️ Cài đặt môi trường Rust qua `rustup`
 
 `rustup` là công cụ chính thức quản lý các phiên bản trình biên dịch Rust và các công cụ liên quan. Nó hỗ trợ cài đặt, cập nhật, chuyển đổi linh hoạt giữa các kênh phát hành (*stable*, *beta*, *nightly*), và hỗ trợ biên dịch chéo (*cross-compilation*) cho nhiều hệ điều hành và kiến trúc vi xử lý khác nhau (x86_64, ARM64, WebAssembly, RISC-V).
 
-##### Hướng dẫn cài đặt theo từng hệ điều hành
+##### 🛠️ Hướng dẫn cài đặt theo từng hệ điều hành
 
 1. **Trên Linux hoặc  macOS:**
    Mở terminal và thực thi lệnh cài đặt từ trang chủ chính thức của ngôn ngữ Rust (`rust-lang.org`):
@@ -113,7 +115,7 @@ Ba công cụ chính để bắt đầu với Rust là `rustup` (quản lý tool
 2. **Trên Windows:**
    Truy cập trang web chính thức của Rust, tải về và chạy bộ cài đặt `rustup-init.exe`. Trong quá trình cài đặt, làm theo hướng dẫn để cài đặt công cụ *Microsoft Visual Studio C++ Build Tools* (chọn gói *"Desktop development with C++"* để cung cấp MSVC Linker cần thiết cho môi trường Windows).
 
-##### Kiểm tra cài đặt và lệnh quản trị thiết yếu
+##### 🧪 Kiểm tra cài đặt và lệnh quản trị thiết yếu
 
 ```bash
 # Kiểm tra phiên bản trình biên dịch rustc
@@ -133,7 +135,7 @@ rustup doc
 
 ---
 
-#### 1.2. Chương trình "hello, world!" đầu tiên
+#### 1.2. 🛠️ Chương trình "hello, world!" đầu tiên
 
 Trong Rust, tệp mã nguồn luôn có phần mở rộng là `.rs`. Khi tên tệp gồm nhiều từ, quy ước chuẩn của cộng đồng (*idiomatic Rust*) là sử dụng dấu gạch dưới (`snake_case`), ví dụ: `hello_world.rs` hoặc `main.rs`.
 
@@ -147,13 +149,13 @@ fn main() {
 }
 ```
 
-##### Mổ xẻ chi tiết cú pháp
+##### 🔎 Mổ xẻ chi tiết cú pháp
 
 1. **`fn main() { ... }`:** Khai báo hàm `main`. Trong Rust, từ khóa `fn` dùng để định nghĩa hàm. `main` là điểm vào của chương trình Rust thông thường; mã khởi động của nền tảng chuẩn bị môi trường trước khi gọi hàm này. Cặp ngoặc đơn `()` chứa danh sách tham số (ở đây không có tham số nào). Khối lệnh của thân hàm luôn nằm trong cặp ngoặc nhọn `{}`.
 2. **`println!("Hello, world! 🦀");`:** In chuỗi ký tự ra màn hình kèm ký tự xuống dòng. Dấu chấm than `!` trong `println!` cho biết đây là lời gọi macro. macro trong Rust cung cấp khả năng siêu lập trình (*metaprogramming*) tại thời điểm biên dịch, cho phép nhận số lượng tham số linh hoạt và kiểm tra định dạng chuỗi an toàn kiểu dữ liệu ngay lúc biên dịch.
 3. **Dấu chấm phẩy `;`:** Đánh dấu sự kết thúc của một câu lệnh (*statement*).
 
-##### Quy trình biên dịch và chạy
+##### ▶️ Quy trình biên dịch và chạy
 
 Rust là ngôn ngữ biên dịch trước (**Ahead-Of-Time compiled**). Bạn dùng trình biên dịch `rustc` để dịch trực tiếp mã nguồn thành tệp thực thi cho target đã chọn; chương trình có thể vẫn phụ thuộc các thư viện hệ thống được liên kết động:
 
@@ -174,11 +176,11 @@ rustc main.rs
 
 ---
 
-#### 1.3. Hệ thống quản lý dự án Cargo chuyên sâu
+#### 1.3. 🛠️ Hệ thống quản lý dự án Cargo chuyên sâu
 
 Trong các dự án thực tế, mã nguồn sẽ phân tán trên nhiều tệp và tích hợp hàng chục thư viện ngoài (trong Rust gọi là **crates**). Bạn thường dùng **Cargo** — trình quản lý gói và hệ sinh thái build chính thức của Rust.
 
-##### Tạo dự án mới với Cargo
+##### 🛠️ Tạo dự án mới với Cargo
 
 ```bash
 # Tạo một dự án ứng dụng thực thi (binary project)
@@ -195,7 +197,7 @@ Cấu trúc thư mục chuẩn được sinh ra:
 | `.gitignore` | Quy tắc bỏ qua tệp sinh ra, như thư mục `target` |
 | `.git/` | Kho Git, thường được tạo nếu dự án chưa nằm trong kho có sẵn |
 
-##### Khám phá tệp cấu hình `Cargo.toml`
+##### 🛠️ Khám phá tệp cấu hình `Cargo.toml`
 
 Tệp này viết bằng định dạng TOML (*Tom's Obvious, Minimal Language*):
 
@@ -214,7 +216,7 @@ authors = ["Thái Việt <ozsxe@icloud.com>"]
 - **`[package]`:** Khối thông tin cấu hình gói gồm tên dự án (`name`), phiên bản phát hành theo chuẩn Semantic Versioning `MAJOR.MINOR.PATCH` (`version`), và phiên bản ấn bản ngôn ngữ (`edition = "2024"`).
 - **`[dependencies]`:** Nơi liệt kê các thư viện ngoài. Khi bạn thêm một crate vào đây, Cargo sẽ tự động tải về từ `crates.io`, kiểm tra mã băm checksum, biên dịch và liên kết vào dự án của bạn.
 
-##### Vòng đời các lệnh Cargo thiết yếu trong công việc hàng ngày
+##### ⏳ Vòng đời các lệnh Cargo thiết yếu trong công việc hàng ngày
 
 1.  **`cargo check`:** Quét cú pháp và kiểm tra kiểu dữ liệu cực nhanh mà không tốn thời gian sinh mã máy thực thi. Đây là lệnh các lập trình viên Rust chạy liên tục trong quá trình viết mã để phát hiện lỗi sớm.
 2.  **`cargo build`:** Biên dịch toàn bộ dự án ở chế độ phát triển (*debug mode*). Kết quả lưu tại `target/debug/hello_cargo`. Quá trình này tắt tối ưu hóa sâu (`opt-level = 0`) để tăng tốc độ biên dịch và giữ lại đầy đủ thông tin gỡ lỗi (*debug symbols*).
@@ -227,11 +229,11 @@ authors = ["Thái Việt <ozsxe@icloud.com>"]
 
 <a id="chuong-02"></a>
 
-### Chương 2. Dự án 1 — Trò chơi đoán số
+### Chương 2. 🎲 Dự án 1 — Trò chơi đoán số
 
 Trò chơi sinh một số nguyên bí mật trong đoạn từ 1 đến 100. Người chơi nhập dự đoán; chương trình cho biết số đó nhỏ hơn, lớn hơn hay bằng số bí mật. Dự án giới thiệu nhập/xuất, biến khả biến, `match`, vòng lặp và `Result`.
 
-#### 2.1. Tạo dự án và khai báo phụ thuộc
+#### 2.1. 🛠️ Tạo dự án và khai báo phụ thuộc
 
 ```bash
 cargo new guessing_game --edition 2024
@@ -255,7 +257,7 @@ Ví dụ dùng API của dòng `rand 0.9`: `rand::rng()` và `Rng::random_range`
 
 Từ khóa `gen` được bảo lưu trong Edition 2024, nhưng `gen_range` là một định danh khác và không bị cấm bởi quy tắc này.
 
-#### 2.2. Mã nguồn hoàn chỉnh: `src/main.rs`
+#### 2.2. 💻 Mã nguồn hoàn chỉnh: `src/main.rs`
 
 ```rust
 use rand::Rng;
@@ -304,7 +306,7 @@ fn main() -> io::Result<()> {
 }
 ```
 
-#### 2.3. Giải thích các khái niệm
+#### 2.3. 🔎 Giải thích các khái niệm
 
 - **`let mut input`:** Chuỗi cần khả biến để `read_line` có thể thêm dữ liệu. Hàm không tự xóa nội dung cũ; ở đây mỗi lượt tạo một chuỗi rỗng mới.
 - **`&mut input`:** Cho hàm mượn độc quyền chuỗi để ghi dữ liệu, không chuyển quyền sở hữu.
@@ -313,29 +315,29 @@ fn main() -> io::Result<()> {
 - **`parse()` và `match`:** Chú thích `u32` giúp suy luận kiểu số cần phân tích. Nhánh có điều kiện `if` kiểm tra miền 1–100; dữ liệu sai được báo để người chơi thử lại.
 - **`Ordering`:** enum có ba biến thể `Less`, `Greater`, `Equal`; `match` xử lý đủ ba trường hợp.
 
-#### 2.4. Chạy và tự kiểm tra
+#### 2.4. 🧪 Chạy và tự kiểm tra
 
 ```bash
 cargo run
 ```
 
-Thử lần lượt `abc`, `0`, `101` và một số hợp lệ. Ba giá trị đầu phải bị từ chối; một dự đoán hợp lệ nhận phản hồi so sánh. Nhập `q` hoặc kết thúc luồng nhập để thoát. **Bài tập:** Thêm bộ đếm số lần dự đoán hợp lệ và in kết quả khi thắng.
+Thử lần lượt `abc`, `0`, `101` và một số hợp lệ. Ba giá trị đầu phải bị từ chối; một dự đoán hợp lệ nhận phản hồi so sánh. Nhập `q` hoặc kết thúc luồng nhập để thoát. **✍️ Bài tập:** Thêm bộ đếm số lần dự đoán hợp lệ và in kết quả khi thắng.
 
 ---
 
 <a id="phan-ii"></a>
 
-## Phần II. Nhập môn
+## Phần II. 🧱 Nhập môn
 
 ---
 
 <a id="chuong-03"></a>
 
-### Chương 3. Biến, tính khả biến và phạm vi
+### Chương 3. 📦 Biến, tính khả biến và phạm vi
 
 Trong hầu hết các ngôn ngữ lập trình truyền thống, biến được tạo ra mặc định có thể gán lại giá trị tùy ý. Tuy nhiên, trong Rust, khái niệm cốt lõi là **ràng buộc biến (Variable Binding)**, và biến mặc định luôn luôn là **bất biến (immutable)**.
 
-#### 3.1. Ràng buộc biến và tính bất biến mặc định
+#### 3.1. 📦 Ràng buộc biến và tính bất biến mặc định
 
 >  **Triết lý của Rust:** *Nếu một giá trị không cần thay đổi, đừng cho phép nó thay đổi.* Điều này giúp ngăn chặn hàng loạt lỗi logic tiềm ẩn khi dữ liệu bị thay đổi bất ngờ bởi các hàm khác hoặc trong môi trường đa luồng.
 
@@ -367,7 +369,7 @@ help: consider making this binding mutable
 
 ---
 
-#### 3.2. Tính khả biến với từ khóa `mut`
+#### 3.2. 📦 Tính khả biến với từ khóa `mut`
 
 Để cho phép một biến thay đổi giá trị, bạn thêm từ khóa `mut` (*mutable*) ngay sau từ khóa `let`:
 
@@ -382,7 +384,7 @@ fn main() {
 
 ---
 
-#### 3.3. So sánh biến bất biến (`let`) và hằng số (`const`)
+#### 3.3. ⚖️ So sánh biến bất biến (`let`) và hằng số (`const`)
 
 |  Đặc tính |  Biến bất biến (`let`) |  Hằng số (`const`) |
 | :--- | :--- | :--- |
@@ -399,7 +401,7 @@ const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;
 
 ---
 
-#### 3.4. Kỹ thuật che bóng (shadowing)
+#### 3.4. 📦 Kỹ thuật che bóng (shadowing)
 
 Rust cho phép bạn khai báo một biến mới có cùng tên với biến đã tồn tại trước đó. Biến mới này sẽ **che bóng (shadow)** biến cũ:
 
@@ -417,7 +419,7 @@ fn main() {
 }
 ```
 
-##### Bảng đối chiếu shadowing (`let`) và khả biến (`let mut`)
+##### ⚖️ Bảng đối chiếu shadowing (`let`) và khả biến (`let mut`)
 
 | Tiêu chí | Khả biến (`let mut x`) | Che bóng biến (`let x = ...; let x = ...;`) |
 | :--- | :--- | :--- |
@@ -437,7 +439,7 @@ let mut spaces = "   ";
 
 ---
 
-#### 3.5. Phạm vi biến (scope)
+#### 3.5. 📦 Phạm vi biến (scope)
 
 Phạm vi (*scope*) là vùng không gian mã nguồn mà một biến có hiệu lực, được giới hạn bởi cặp ngoặc nhọn `{}`:
 
@@ -455,15 +457,15 @@ fn main() {
 
 <a id="chuong-04"></a>
 
-### Chương 4. Kiểu dữ liệu cơ bản, hàm và luồng điều khiển
+### Chương 4. 🔢 Kiểu dữ liệu cơ bản, hàm và luồng điều khiển
 
 Rust là ngôn ngữ **định kiểu tĩnh (statically typed)**: mọi biến đều phải xác định được kiểu dữ liệu tại thời điểm biên dịch. Nhờ cơ chế **suy luận kiểu (type inference)** thông minh, trình biên dịch tự động nhận biết kiểu của hầu hết các biến, và chỉ yêu cầu chú thích tường minh khi có nhiều kiểu khả dĩ (như `.parse()`).
 
-#### 4.1. Kiểu dữ liệu vô hướng (scalar types)
+#### 4.1. 🧩 Kiểu dữ liệu vô hướng (scalar types)
 
 Kiểu vô hướng đại diện cho một giá trị đơn lẻ. Phần này giới thiệu bốn nhóm kiểu vô hướng, sau đó bổ sung kiểu đơn vị `()` (một tuple rỗng, không phải kiểu vô hướng):
 
-##### 1. Kiểu số nguyên (integers)
+##### 1. 🔢 Kiểu số nguyên (integers)
 
 Số nguyên gồm số có dấu (`i` - *signed*, lưu được số âm và dương) và số không dấu (`u` - *unsigned*, chỉ lưu số không âm).
 
@@ -497,7 +499,7 @@ Giả sử một biến kiểu `u8` (miền giá trị từ 0 đến 255) đang 
   - `overflowing_*` (ví dụ `255u8.overflowing_add(1)` $\rightarrow$ trả về tuple `(0, true)`).
   - `saturating_*` (ví dụ `255u8.saturating_add(10)` $\rightarrow$ chạm trần tại giá trị cực đại 255).
 
-##### 2. Kiểu số thực dấu phẩy động (floating-point types)
+##### 2. 🔢 Kiểu số thực dấu phẩy động (floating-point types)
 
 Tuân theo chuẩn IEEE 754:
 
@@ -509,11 +511,11 @@ let x = 2.0;      // f64 (mặc định)
 let y: f32 = 3.0; // f32
 ```
 
-##### 3. Kiểu logic (boolean)
+##### 3. 🔢 Kiểu logic (boolean)
 
 Từ khóa `bool`, nhận hai giá trị `true` hoặc `false`, chiếm đúng 1 byte bộ nhớ.
 
-##### 4. Kiểu ký tự (character)
+##### 4. 🔤 Kiểu ký tự (character)
 
 Từ khóa `char`, đặt trong dấu nháy đơn `'a'`, chiếm **4 byte (32-bit)** bộ nhớ. Đại diện cho một *Unicode Scalar Value* trong dải từ $\text{U+0000}$ đến $\text{U+D7FF}$ và $\text{U+E000}$ đến $\text{U+10FFFF}$. Một `char` biểu diễn một giá trị vô hướng Unicode; một ký tự người dùng nhìn thấy có thể cần nhiều `char`, như chữ kèm dấu tổ hợp hoặc emoji ghép. Ví dụ các giá trị đơn:
 ```rust
@@ -522,15 +524,15 @@ let vietnamese_char = 'ệ';
 let crab_emoji = '🦀';
 ```
 
-##### 5. Kiểu đơn vị (unit type `()`)
+##### 5. 🔎 Kiểu đơn vị (unit type `()`)
 
 Tuple rỗng `()` chỉ có một giá trị duy nhất là `()` và có kích thước **0 byte (Zero-Sized Type - ZST)**. Hàm không khai báo kiểu trả về có kiểu trả về mặc định là `()`. Khối lệnh kết thúc bình thường mà không có biểu thức cuối cũng có giá trị `()`; biểu thức không bao giờ kết thúc có thể có kiểu `!`.
 
 ---
 
-#### 4.2. Kiểu dữ liệu phức hợp cơ bản (compound types)
+#### 4.2. 🧩 Kiểu dữ liệu phức hợp cơ bản (compound types)
 
-##### 1. Bộ giá trị (tuple)
+##### 1. 🧩 Bộ giá trị (tuple)
 
 Gom nhóm nhiều giá trị có **nhiều kiểu dữ liệu khác nhau** thành một đơn vị duy nhất, kích thước cố định sau khi khai báo:
 
@@ -549,7 +551,7 @@ fn main() {
 }
 ```
 
-##### 2. Mảng tĩnh (array `[T; N]`)
+##### 2. 🧩 Mảng tĩnh (array `[T; N]`)
 
 - Mọi phần tử trong mảng phải có **cùng một kiểu dữ liệu `T`**.
 - Mảng có **độ dài cố định `N`** là một phần của kiểu. Mảng lưu các phần tử liên tiếp ngay trong giá trị của nó; vị trí thực tế có thể ở stack, trong một cấu trúc trên heap, vùng tĩnh hoặc được tối ưu hóa vào thanh ghi.
@@ -572,7 +574,7 @@ Truy xuất vượt biên bằng `a[index]` gây `panic` khi chạy; trường h
 
 ---
 
-#### 4.3. Câu lệnh (statement) và biểu thức (expression)
+#### 4.3. 🔢 Câu lệnh (statement) và biểu thức (expression)
 
 Đây là một trong những đặc điểm thiết kế cốt lõi nhất của Rust:
 
@@ -593,7 +595,7 @@ fn main() {
 
 ---
 
-#### 4.4. Định nghĩa hàm (functions)
+#### 4.4. 🔧 Định nghĩa hàm (functions)
 
 Hàm được khai báo bằng `fn`. Tham số hàm bắt buộc phải chú thích kiểu dữ liệu tường minh, và kiểu trả về đặt sau mũi tên `->`:
 
@@ -615,9 +617,9 @@ fn main() {
 
 ---
 
-#### 4.5. Cấu trúc luồng điều khiển (control flow)
+#### 4.5. 🧵 Cấu trúc luồng điều khiển (control flow)
 
-##### 1. Biểu thức điều kiện `if`
+##### 1. 🔎 Biểu thức điều kiện `if`
 
 Điều kiện trong `if` bắt buộc phải là kiểu `bool`. Vì `if` là một biểu thức, bạn có thể dùng nó ngay bên phải câu lệnh `let` (hai nhánh `if` và `else` phải có kiểu tương thích sau các phép chuyển đổi được ngôn ngữ cho phép):
 
@@ -636,7 +638,7 @@ fn main() {
 }
 ```
 
-##### 2. Vòng lặp `loop`, trả về giá trị từ `break` và nhãn vòng lặp (`'label`)
+##### 2. 🔁 Vòng lặp `loop`, trả về giá trị từ `break` và nhãn vòng lặp (`'label`)
 
 ```rust
 fn main() {
@@ -668,7 +670,7 @@ fn main() {
 }
 ```
 
-##### 3. Vòng lặp điều kiện `while` và vòng lặp tập hợp `for`
+##### 3. 🔁 Vòng lặp điều kiện `while` và vòng lặp tập hợp `for`
 
 ```rust
 fn main() {
@@ -695,17 +697,17 @@ fn main() {
 
 <a id="phan-iii"></a>
 
-## Phần III. Quyền sở hữu và mượn
+## Phần III. 🔑 Quyền sở hữu và mượn
 
 ---
 
 <a id="chuong-05"></a>
 
-### Chương 5. Quyền sở hữu và mượn
+### Chương 5. 🔑 Quyền sở hữu và mượn
 
 **Quyền sở hữu (ownership)** xác định ai chịu trách nhiệm quản lý một giá trị và khi nào tài nguyên của nó được thu hồi. Rust kiểm tra quyền sở hữu và mượn bằng hệ thống kiểu, đồng thời sinh mã hủy tài nguyên khi cần. Cơ chế này không đòi hỏi bộ thu gom rác truy vết, nhưng cấp phát, giải phóng và một số kiểu quản lý tài nguyên vẫn có chi phí khi chạy.
 
-#### 5.1. Các cách quản lý bộ nhớ
+#### 5.1. 🧠 Các cách quản lý bộ nhớ
 
 Có nhiều cách quản lý tài nguyên; các ngôn ngữ có thể kết hợp hơn một cách:
 
@@ -720,7 +722,7 @@ Borrow checker không thêm một bộ kiểm tra quyền sở hữu chạy nề
 
 ---
 
-#### 5.2. Stack, heap và bố cục của String
+#### 5.2. 🧠 Stack, heap và bố cục của String
 
 Stack thường chứa các khung lời gọi hàm và dữ liệu cục bộ; việc cấp phát, thu hồi theo khung thường đơn giản. heap phục vụ các vùng nhớ có vòng đời hoặc kích thước linh hoạt và được truy cập qua con trỏ. Đây là mô hình giải thích hữu ích, không phải quy tắc khẳng định mọi giá trị của một kiểu phải nằm ở một vùng nhớ nhất định.
 
@@ -737,7 +739,7 @@ Giá trị `String` có thể nằm trên stack, trong một `Box`, trong phần
 
 ---
 
-#### 5.3. Ba quy tắc nhập môn về quyền sở hữu
+#### 5.3. 🔑 Ba quy tắc nhập môn về quyền sở hữu
 
 Ba quy tắc nhập môn về quyền sở hữu:
 
@@ -749,7 +751,7 @@ Chủ sở hữu có thể là biến, trường của struct hoặc phần tử
 
 ---
 
-#### 5.4. Cơ chế dịch chuyển quyền sở hữu (move semantics)
+#### 5.4. 🔑 Cơ chế dịch chuyển quyền sở hữu (move semantics)
 
 Hãy xem chuyện gì xảy ra khi gán biến `s1` cho `s2`:
 
@@ -763,16 +765,16 @@ fn main() {
 }
 ```
 
-##### Tại sao Rust không dùng shallow Copy mà dùng move?
+##### 🔎 Tại sao Rust không dùng shallow Copy mà dùng move?
 
 - Nếu Rust chỉ sao chép con trỏ trên stack (*Shallow Copy*) và giữ cả `s1` lẫn `s2` hợp lệ, thì cả hai biến sẽ cùng trỏ vào một vùng nhớ trên heap. Khi kết thúc hàm, cả `s1` và `s2` sẽ cùng gọi hàm `drop` để giải phóng cùng một vùng nhớ hai lần (**Double Free Error**) — một lỗ hổng bảo mật cực kỳ nguy hiểm!
 - **Giải pháp của Rust:** Về ngữ nghĩa, Rust chuyển giá trị quản lý của `String` sang `s2` và không cho dùng lại `s1` như một giá trị còn hợp lệ. Trình biên dịch có thể tối ưu bỏ thao tác sao chép vật lý. Hành động này gọi là **Move (Dịch chuyển quyền sở hữu)**. Khi kết thúc scope, chỉ một mình `s2` giải phóng bộ nhớ heap. Nội dung bộ đệm heap không cần được nhân bản; quyền sở hữu tránh việc hai biến cùng giải phóng bộ đệm trong ví dụ này.
 
 ---
 
-#### 5.5. Clone và Copy: hai cách sao chép khác nhau
+#### 5.5. 🔑 Clone và Copy: hai cách sao chép khác nhau
 
-##### 1. `String::clone()` nhân bản nội dung chuỗi
+##### 1. 🔤 `String::clone()` nhân bản nội dung chuỗi
 
 `Clone` nói chung không bảo đảm sao chép sâu. Ví dụ `Rc::clone()` và `Arc::clone()` tạo handle cùng sở hữu dữ liệu, không nhân bản dữ liệu bên trong.
 Khi bạn thực sự muốn nhân bản cả dữ liệu trên heap để có hai biến độc lập:
@@ -786,7 +788,7 @@ fn main() {
 }
 ```
 
-##### 2. Trait `Copy` và sao chép ngầm định
+##### 2. 🧬 Trait `Copy` và sao chép ngầm định
 
 **`Copy` là một trait**, không phải hệ quả của việc dữ liệu nằm trên stack. Một kiểu triển khai `Copy` cho phép phép gán sao chép giá trị mà không làm mất hiệu lực biến nguồn. Kiểu có `Drop` không thể triển khai `Copy`; kiểu tự định nghĩa cần triển khai hoặc dẫn xuất trait này. Chi phí sao chép phụ thuộc kích thước giá trị, chẳng hạn mảng lớn vẫn có thể tốn nhiều công sức sao chép:
 
@@ -806,7 +808,7 @@ fn main() {
 
 ---
 
-#### 5.6. Quyền sở hữu trong hàm
+#### 5.6. 🔑 Quyền sở hữu trong hàm
 
 Truyền một biến vào hàm có cơ chế hoàn toàn giống như phép gán:
 
@@ -832,11 +834,11 @@ fn makes_copy(some_integer: i32) {
 
 ---
 
-#### 5.7. Cơ chế mượn (borrowing) và tham chiếu (references)
+#### 5.7. 🔑 Cơ chế mượn (borrowing) và tham chiếu (references)
 
 Thay vì chuyển giao quyền sở hữu vào hàm rồi lại phải trả về, Rust cho phép tạo một **Tham chiếu (Reference)** trỏ đến giá trị mà không sở hữu nó. Hành động tạo tham chiếu gọi là **Mượn (Borrowing)**.
 
-##### 1. Tham chiếu bất biến (`&T` - shared borrow)
+##### 1. 🔑 Tham chiếu bất biến (`&T` - shared borrow)
 
 Cho phép đọc dữ liệu. Không thể sửa trực tiếp dữ liệu thông thường qua `&T`; các kiểu có tính khả biến nội tại như `RefCell` và `Mutex` cung cấp API sửa đổi với quy tắc riêng:
 
@@ -852,7 +854,7 @@ fn calculate_length(s: &str) -> usize {
 } // s ra khỏi scope, nhưng vì s chỉ mượn (không sở hữu) nên không giải phóng gì cả!
 ```
 
-##### 2. Tham chiếu khả biến (`&mut T` - exclusive borrow)
+##### 2. 🔑 Tham chiếu khả biến (`&mut T` - exclusive borrow)
 
 Cho phép sửa đổi trực tiếp giá trị đang mượn:
 
@@ -870,13 +872,13 @@ fn change(some_string: &mut String) {
 
 ---
 
-#### 5.8. Quy tắc bất biến của borrow checker và non-lexical lifetimes (NLL)
+#### 5.8. ⏳ Quy tắc bất biến của borrow checker và non-lexical lifetimes (NLL)
 
-> **Quy tắc mượn:** Trong thời gian mượn cùng một vùng dữ liệu, có thể có nhiều tham chiếu chia sẻ hoặc một tham chiếu độc quyền đang được sử dụng. Không được đọc hoặc ghi qua đường truy cập xung đột với phép mượn còn hiệu lực.
+> **📌 Quy tắc mượn:** Trong thời gian mượn cùng một vùng dữ liệu, có thể có nhiều tham chiếu chia sẻ hoặc một tham chiếu độc quyền đang được sử dụng. Không được đọc hoặc ghi qua đường truy cập xung đột với phép mượn còn hiệu lực.
 
 Rust có thể cho mượn khả biến các trường hoặc lát cắt không chồng lấn; có thể mượn lại qua một tham chiếu khi tham chiếu trước tạm thời không được dùng. Các kiểu khả biến nội tại cung cấp thêm cơ chế kiểm tra hoặc đồng bộ hóa. Cùng với `Send` và `Sync`, những quy tắc này giúp ngăn data race trong Safe Rust; chúng không ngăn mọi race condition hay deadlock.
 
-##### Cơ chế non-lexical lifetimes (NLL)
+##### ⏳ Cơ chế non-lexical lifetimes (NLL)
 
 NLL phân tích luồng điều khiển để thu hẹp thời gian mượn đến phần thực sự cần thiết, thường kết thúc sau lần sử dụng cuối. Điều này khác với phạm vi tên biến và thời điểm chạy hàm hủy. Trong ví dụ tuyến tính sau, phép mượn chia sẻ kết thúc trước khi tạo phép mượn độc quyền:
 
@@ -898,7 +900,7 @@ fn main() {
 
 ---
 
-#### 5.9. Ngăn chặn con trỏ lơ lửng (dangling references)
+#### 5.9. ⚠️ Ngăn chặn con trỏ lơ lửng (dangling references)
 
 Trong C/C++, nếu bạn trả về địa chỉ của một biến cục bộ trong hàm, con trỏ đó sẽ trỏ vào vùng nhớ rác ngay khi hàm kết thúc. Trong Rust, Borrow Checker chặn đứng lỗi này ngay lập tức:
 
@@ -918,7 +920,7 @@ fn no_dangle() -> String {
 
 ---
 
-#### 5.10. Kiểu lát cắt (slices)
+#### 5.10. 🔑 Kiểu lát cắt (slices)
 
 Kiểu lát cắt `[T]` biểu diễn một dãy phần tử liên tiếp có độ dài không nằm trong kiểu. Ta thường thao tác qua `&[T]` hoặc `&mut [T]`; những tham chiếu này không sở hữu dữ liệu. Tương tự, `str` là kiểu lát cắt chuỗi và `&str` là tham chiếu tới chuỗi UTF-8 hợp lệ.
 
@@ -937,7 +939,7 @@ fn main() {
 }
 ```
 
-##### Quy ước thiết kế hàm tối ưu với `&str`
+##### 🔧 Quy ước thiết kế hàm tối ưu với `&str`
 
 Khi hàm chỉ cần đọc nội dung chuỗi, thường nên nhận `&str` thay vì `&String`. Nhờ cơ chế *Deref Coercion*, hàm nhận `&str` có thể truyền vào cả `&str` lẫn `&String`!
 
@@ -958,8 +960,8 @@ Hàm `first_word` ở trên chỉ tách theo dấu cách ASCII `b' ', không nh�
 
 Ví dụ lát cắt mảng: `let a = [10, 20, 30]; let middle: &[i32] = &a[1..];`.
 
-> **Thử thách tư duy rustacean (phần iii)**
-> **Câu hỏi:** Đoạn mã sau có biên dịch thành công không? Tại sao?
+> **🧠 Thử thách tư duy rustacean (phần iii)**
+> **❓ Câu hỏi:** Đoạn mã sau có biên dịch thành công không? Tại sao?
 > ```rust,compile_fail
 > fn first_word(s: &str) -> &str {
 >     s.split_whitespace().next().unwrap_or("")
@@ -972,23 +974,23 @@ Ví dụ lát cắt mảng: `let a = [10, 20, 30]; let middle: &[i32] = &a[1..];
 >     println!("Từ đầu tiên là: {word}");
 > }
 > ```
-> **Giải đáp:** **không biên dịch được!** Hàm `first_word(&s)` mượn bất biến biến `s` và trả về lát cắt `word` cũng gắn liền với mượn bất biến của `s`. Ở dòng tiếp theo, `s.clear()` yêu cầu một **mượn khả biến (`&mut s`)** để xóa nội dung chuỗi, trong khi `word` (mượn bất biến) vẫn còn được sử dụng ở lệnh `println!` phía dưới. Điều này vi phạm quy tắc vàng của Borrow Checker: *Không thể vừa mượn bất biến vừa mượn khả biến tại cùng một thời điểm!*
+> **💡 Giải đáp:** **không biên dịch được!** Hàm `first_word(&s)` mượn bất biến biến `s` và trả về lát cắt `word` cũng gắn liền với mượn bất biến của `s`. Ở dòng tiếp theo, `s.clear()` yêu cầu một **mượn khả biến (`&mut s`)** để xóa nội dung chuỗi, trong khi `word` (mượn bất biến) vẫn còn được sử dụng ở lệnh `println!` phía dưới. Điều này vi phạm quy tắc vàng của Borrow Checker: *Không thể vừa mượn bất biến vừa mượn khả biến tại cùng một thời điểm!*
 
 ---
 
 <a id="phan-iv"></a>
 
-## Phần IV. Kiểu phức hợp và khớp mẫu
+## Phần IV. 🧩 Kiểu phức hợp và khớp mẫu
 
 ---
 
 <a id="chuong-06"></a>
 
-### Chương 6. Chuỗi ký tự: String và &str
+### Chương 6. 🔤 Chuỗi ký tự: String và &str
 
 Chuỗi ký tự trong Rust phân biệt rõ ràng giữa **chuỗi sở hữu (`String`)** và **lát cắt chuỗi mượn (`&str`)**, đồng thời thực thi nghiêm ngặt chuẩn mã hóa **UTF-8**.
 
-#### 6.1. Bản chất mã hóa UTF-8 và ba góc nhìn về chuỗi
+#### 6.1. 🔤 Bản chất mã hóa UTF-8 và ba góc nhìn về chuỗi
 
 Tại sao trong Rust bạn **không thể** viết `s[0]` để lấy ký tự đầu tiên của chuỗi?
 UTF-8 mã hóa mỗi giá trị vô hướng Unicode bằng **1 đến 4 byte**; một cụm ký tự hiển thị có thể gồm nhiều giá trị vô hướng:
@@ -999,7 +1001,7 @@ UTF-8 mã hóa mỗi giá trị vô hướng Unicode bằng **1 đến 4 byte**;
 
 Rust không định nghĩa chỉ mục nguyên cho chuỗi vì “phần tử thứ n” có thể được hiểu là byte, `char` hoặc cụm ký tự hiển thị. Dùng `s.as_bytes().get(n)` để đọc byte và `s.chars().nth(n)` để tìm giá trị vô hướng thứ n (cần duyệt, không bảo đảm O(1)). Việc tách cụm ký tự hiển thị cần một thư viện chuyên về Unicode, chẳng hạn `unicode-segmentation`.
 
-##### Ba góc nhìn về chuỗi trong Rust (ví dụ chuỗi `"Việt"`)
+##### 🔤 Ba góc nhìn về chuỗi trong Rust (ví dụ chuỗi `"Việt"`)
 
 1. **Dưới góc nhìn Bytes (`u8`):** Gồm 6 byte: `[86, 105, 225, 187, 135, 116]` (trong đó riêng chữ `'ệ'` được mã hóa bởi 3 byte `[225, 187, 135]`).
 2. **Dưới góc nhìn Scalar Values (`char`):** Gồm 4 ký tự Unicode: `['V', 'i', 'ệ', 't']`.
@@ -1029,7 +1031,7 @@ fn main() {
 
 ---
 
-#### 6.2. Bảng đối chiếu `String` và `&str`
+#### 6.2. ⚖️ Bảng đối chiếu `String` và `&str`
 
 |  Tiêu chí |  `String` |  `&str` (String Slice) |
 | :--- | :--- | :--- |
@@ -1059,7 +1061,7 @@ fn main() {
 
 Rust không tự chuẩn hóa Unicode khi so sánh chuỗi. Nếu nghiệp vụ cần xem các dạng tổ hợp tương đương là như nhau, hãy chọn một chính sách chuẩn hóa rõ ràng.
 
-#### 6.3. Các phép toán thao tác chuỗi thường dùng
+#### 6.3. 🔤 Các phép toán thao tác chuỗi thường dùng
 
 ```rust
 fn main() {
@@ -1086,9 +1088,9 @@ fn main() {
 
 <a id="chuong-07"></a>
 
-### Chương 7. Kiểu dữ liệu tùy chỉnh: struct và enum
+### Chương 7. 🧩 Kiểu dữ liệu tùy chỉnh: struct và enum
 
-#### 7.1. Cấu trúc dữ liệu structs (structures)
+#### 7.1. 🧩 Cấu trúc dữ liệu structs (structures)
 
 Struct cho phép gom nhóm nhiều trường dữ liệu có liên quan lại thành một kiểu dữ liệu có tên rõ ràng.
 
@@ -1126,7 +1128,7 @@ fn main() {
 }
 ```
 
-##### Các dạng struct đặc biệt
+##### 🧩 Các dạng struct đặc biệt
 
 1. **Tuple struct:** Có tên kiểu nhưng các trường không đặt tên. Rất hữu ích để tạo kiểu mới phân biệt ngữ nghĩa (*Newtype Pattern*):
    ```rust
@@ -1137,7 +1139,7 @@ fn main() {
 
 ---
 
-#### 7.2. Kiểu liệt kê enums và vũ khí `Option<T>`
+#### 7.2. 🧩 Kiểu liệt kê enums và vũ khí `Option<T>`
 
 Trong khi struct gom các trường cùng tồn tại đồng thời (*kiểu AND*), **Enum** định nghĩa một giá trị chỉ có thể là **một trong nhiều** biến thể khả dĩ (*kiểu OR - Algebraic Data Type*).
 
@@ -1151,7 +1153,7 @@ enum Message {
 }
 ```
 
-##### `Option<T>`: biểu diễn giá trị có thể vắng mặt
+##### 🔎 `Option<T>`: biểu diễn giá trị có thể vắng mặt
 
 Tham chiếu Rust hợp lệ không được là null. Để mô hình hóa dữ liệu có thể vắng mặt, thư viện chuẩn cung cấp `Option<T>`. Con trỏ thô vẫn có thể mang giá trị null, nên không nên nói Rust hoàn toàn không có null. Định nghĩa dưới đây chỉ minh họa enum chuẩn đã có sẵn trong prelude; không cần khai báo lại trong dự án:
 
@@ -1168,13 +1170,13 @@ Không thể dùng `Option<T>` trực tiếp như `T`; bạn phải chọn cách
 
 <a id="chuong-08"></a>
 
-### Chương 8. Khớp mẫu
+### Chương 8. 🎯 Khớp mẫu
 
 **Pattern (Mẫu)** là cú pháp đặc biệt của Rust dùng để đối sánh và phân rã cấu trúc dữ liệu.
 
-#### 8.1. Sáu vị trí xuất hiện của pattern và phân loại refutable / irrefutable
+#### 8.1. 🎯 Sáu vị trí xuất hiện của pattern và phân loại refutable / irrefutable
 
-##### 1. Sáu vị trí pattern xuất hiện trong Rust
+##### 1. 🎯 Sáu vị trí pattern xuất hiện trong Rust
 
 1. **Nhánh `match`:** `match value { PATTERN => EXPRESSION }`.
 2. **Biểu thức `if let` và `let else`:** Xử lý gọn một mẫu cụ thể.
@@ -1183,14 +1185,14 @@ Không thể dùng `Option<T>` trực tiếp như `T`; bạn phải chọn cách
 5. **Câu lệnh `let`:** `let (x, y, z) = (1, 2, 3);`.
 6. **Tham số hàm:** `fn print_coordinates(&(x, y): &(i32, i32))`.
 
-##### 2. Phân biệt irrefutable và refutable patterns
+##### 2. ⚖️ Phân biệt irrefutable và refutable patterns
 
 -  **Irrefutable (Không thể thất bại):** Mẫu luôn khớp với mọi giá trị có thể có của kiểu đó (ví dụ: `let x = 5;`, `let (a, b) = pair;`). Câu lệnh `let` thông thường (không có `else`), vòng lặp `for` và tham số hàm yêu cầu mẫu irrefutable.
 -  **Refutable (Có thể thất bại):** Mẫu có thể không khớp với một số giá trị (ví dụ: `Some(x)` sẽ thất bại nếu giá trị là `None`). Dùng trong `if let`, `let else`, `while let` và các nhánh của `match`.
 
 ---
 
-#### 8.2. Cấu trúc `match`, `if let` và `let else`
+#### 8.2. 🎯 Cấu trúc `match`, `if let` và `let else`
 
 ```rust
 fn plus_one(x: Option<i32>) -> Option<i32> {
@@ -1217,7 +1219,7 @@ fn process_config(config_max: Option<u8>) {
 
 ---
 
-#### 8.3. Các cú pháp khớp mẫu thường dùng
+#### 8.3. 🎯 Các cú pháp khớp mẫu thường dùng
 
 ```rust
 struct Point {
@@ -1275,15 +1277,15 @@ fn main() {
 
 <a id="phan-v"></a>
 
-## Phần V. Phương thức, generics và trait
+## Phần V. ⚙️ Phương thức, generics và trait
 
 ---
 
 <a id="chuong-09"></a>
 
-### Chương 9. Phương thức, impl và thiết kế hướng đối tượng
+### Chương 9. 🔧 Phương thức, impl và thiết kế hướng đối tượng
 
-#### 9.1. Định nghĩa phương thức (`&self`, `&mut self`, `self`) và hàm liên kết
+#### 9.1. 🔧 Định nghĩa phương thức (`&self`, `&mut self`, `self`) và hàm liên kết
 
 Trong Rust, dữ liệu (`struct`/`enum`) và hành vi (`impl`) được tách bạch rõ ràng:
 
@@ -1333,7 +1335,7 @@ fn main() {
 
 ---
 
-#### 9.2. Rust dưới góc nhìn lập trình hướng đối tượng (OOP)
+#### 9.2. 🔎 Rust dưới góc nhìn lập trình hướng đối tượng (OOP)
 
 Rust hỗ trợ nhiều kỹ thuật thường dùng trong lập trình hướng đối tượng, với mô hình kiểu riêng:
 
@@ -1343,7 +1345,7 @@ Rust hỗ trợ nhiều kỹ thuật thường dùng trong lập trình hướng
 
 ---
 
-#### 9.3. Mẫu thiết kế trạng thái chuẩn rustacean: typestate pattern
+#### 9.3. 🎯 Mẫu thiết kế trạng thái chuẩn rustacean: typestate pattern
 
 Trong OOP truyền thống, để biểu diễn một đối tượng thay đổi hành vi theo trạng thái (như bài viết chuyển từ *Nháp* sang *Đã xuất bản*), ta thường dùng *State Pattern* với các biến cờ hoặc nhánh kiểm tra lúc chạy.
 
@@ -1412,9 +1414,9 @@ fn main() {
 
 <a id="chuong-10"></a>
 
-### Chương 10. Generics và trait
+### Chương 10. 🧬 Generics và trait
 
-#### 10.1. Kiểu chung (generics) và const generics
+#### 10.1. 🧬 Kiểu chung (generics) và const generics
 
 Generics cho phép viết hàm, struct, enum và phương thức hoạt động trên nhiều kiểu dữ liệu mà không phải viết lặp lại mã:
 
@@ -1464,7 +1466,7 @@ fn main() {
 }
 ```
 
-##### Bản chất hiệu năng: cơ chế đơn hình hóa (monomorphization)
+##### 🔎 Bản chất hiệu năng: cơ chế đơn hình hóa (monomorphization)
 
 `largest` dùng `Ord` để yêu cầu thứ tự toàn phần và trả `None` khi đầu vào rỗng. Nếu dùng `PartialOrd` cho số thực, cần quy định rõ cách xử lý giá trị không so sánh được như `NaN`.
 
@@ -1472,7 +1474,7 @@ Rust thường đơn hình hóa mã generic theo những kiểu cụ thể đư�
 
 ---
 
-#### 10.2. Định nghĩa traits, trait bounds và blanket implementations
+#### 10.2. 🔧 Định nghĩa traits, trait bounds và blanket implementations
 
 ```rust
 pub trait Summary {
@@ -1506,7 +1508,7 @@ where
 }
 ```
 
-##### Blanket implementations (triển khai bao phủ)
+##### 🔧 Blanket implementations (triển khai bao phủ)
 
 Rust cho phép cài đặt một trait đồng loạt cho mọi kiểu dữ liệu nếu kiểu đó thỏa mãn một trait khác. Ví dụ điển hình trong thư viện chuẩn:
 ```rust
@@ -1517,7 +1519,7 @@ Rust cho phép cài đặt một trait đồng loạt cho mọi kiểu dữ li�
 
 ---
 
-#### 10.3. Đa hình động với trait objects (`dyn Trait`)
+#### 10.3. 🧬 Đa hình động với trait objects (`dyn Trait`)
 
 Khi bạn cần một tập hợp (`Vec`) chứa nhiều đối tượng thuộc các kiểu dữ liệu khác nhau nhưng cùng thực hiện một hành vi chung:
 
@@ -1578,9 +1580,9 @@ Trait dùng qua `dyn` phải thỏa điều kiện **dyn compatibility** (trư�
 
 `impl Trait` ở tham số là cách viết gọn một ràng buộc generic. Ở kiểu trả về, nó che một kiểu cụ thể do hàm chọn; các nhánh trả về thông thường vẫn phải có cùng kiểu ẩn, không thể tùy ý thay thế cho `Box<dyn Trait>`.
 
-#### 10.4. Các tính năng trait nâng cao (advanced traits)
+#### 10.4. 🧬 Các tính năng trait nâng cao (advanced traits)
 
-##### 1. Kiểu liên kết (associated types)
+##### 1. 🧬 Kiểu liên kết (associated types)
 
 Kiểu liên kết (`type Item;`) được xác định cho một triển khai trait cụ thể. Ví dụ rút gọn sau minh họa `Iterator` trong thư viện chuẩn, không phải định nghĩa cần chép đè lên trait chuẩn:
 ```rust
@@ -1590,7 +1592,7 @@ pub trait Iterator {
 }
 ```
 
-##### 2. Nạp chồng toán tử (operator overloading) với `std::ops`
+##### 2. 🔢 Nạp chồng toán tử (operator overloading) với `std::ops`
 
 Cài đặt các trait trong `std::ops` (như `Add`, `Sub`, `Mul`, `Index`) để nạp chồng toán tử cho struct của bạn:
 
@@ -1621,12 +1623,12 @@ fn main() {
 }
 ```
 
-##### 3. Cú pháp định danh đầy đủ (fully qualified syntax) và supertraits
+##### 3. 🧬 Cú pháp định danh đầy đủ (fully qualified syntax) và supertraits
 
 - **Supertrait:** Yêu cầu một kiểu muốn cài đặt trait `A` thì bắt buộc phải cài đặt trait `B` trước (`trait OutlinePrint: std::fmt::Display`).
 - **Fully Qualified Syntax:** Khi hai trait có phương thức trùng tên nhau trên cùng một kiểu, dùng cú pháp `<Type as Trait>::function(...)` để chỉ định rõ hàm muốn gọi.
 
-##### 4. Mẫu hình newtype vượt qua quy tắc cô nhi (orphan rule)
+##### 4. 🔎 Mẫu hình newtype vượt qua quy tắc cô nhi (orphan rule)
 
 Quy tắc **Orphan Rule** ngăn không cho bạn cài đặt `fmt::Display` (thuộc crate `std`) trực tiếp lên `Vec<String>` (cũng thuộc crate `std`). Để vượt qua một cách hợp lệ và không tốn chi phí runtime, ta bọc `Vec<String>` vào một Tuple struct cục bộ:
 
@@ -1647,9 +1649,9 @@ fn main() {
 }
 ```
 
-> **Thử thách tư duy rustacean (phần v)**
-> **Câu hỏi:** Khi nào bạn nên dùng **Đa hình tĩnh (`impl Trait` / Generics `<T: Trait>`)** và khi nào nên dùng **Đa hình động (`Box<dyn Trait>`)**?
-> **Giải đáp:**
+> **🧠 Thử thách tư duy rustacean (phần v)**
+> **❓ Câu hỏi:** Khi nào bạn nên dùng **Đa hình tĩnh (`impl Trait` / Generics `<T: Trait>`)** và khi nào nên dùng **Đa hình động (`Box<dyn Trait>`)**?
+> **💡 Giải đáp:**
 > - Dùng **generics** khi kiểu cụ thể đã được xác định ở lúc biên dịch và cần giữ thông tin kiểu cho tối ưu hóa. Không có một tỷ lệ áp dụng chung cho mọi dự án.
 > - Dùng **trait object (`Box<dyn Trait>` hoặc `&dyn Trait`)** khi cần lưu trữ một tập hợp hỗn hợp nhiều kiểu dữ liệu khác nhau trong cùng một cấu trúc tại runtime (ví dụ `Vec<Box<dyn Draw>>`) hoặc khi muốn giảm dung lượng tệp nhị phân đánh đổi lấy một bước nhảy con trỏ hàm qua bảng `vtable`.
 
@@ -1657,17 +1659,17 @@ fn main() {
 
 <a id="phan-vi"></a>
 
-## Phần VI. Tập hợp dữ liệu, chuyển đổi kiểu và xử lý lỗi
+## Phần VI. 🗃️ Tập hợp dữ liệu, chuyển đổi kiểu và xử lý lỗi
 
 ---
 
 <a id="chuong-11"></a>
 
-### Chương 11. Các cấu trúc dữ liệu tập hợp
+### Chương 11. 🗃️ Các cấu trúc dữ liệu tập hợp
 
 Các tập hợp chuẩn quản lý vùng lưu trữ có thể thay đổi khi chạy. `Vec` thuộc `std::vec` và có sẵn trong prelude; các kiểu như `HashMap`, `BTreeMap` thuộc `std::collections`. Xóa phần tử thường không tự giảm dung lượng đã cấp phát; khi cần có thể cân nhắc các phương thức thu gọn phù hợp.
 
-#### 11.1. So sánh các collection chuẩn
+#### 11.1. ⚖️ So sánh các collection chuẩn
 
 Bảng dưới dùng $n$ là số phần tử. “Khấu hao” tính chi phí trung bình trên một chuỗi thao tác, còn “kỳ vọng” gắn với phân tích xác suất; hai khái niệm này không đồng nghĩa.
 
@@ -1686,7 +1688,7 @@ Việc cấp phát lại có thể khiến một lần chèn riêng lẻ tốn O
 
 ---
 
-#### 11.2. Vector co giãn (`Vec<T>`)
+#### 11.2. 🧩 Vector co giãn (`Vec<T>`)
 
 ```rust
 fn main() {
@@ -1706,7 +1708,7 @@ fn main() {
 }
 ```
 
-##### Tại sao borrow checker cấm `v.push()` khi đang giữ tham chiếu phần tử `&v[0]`?
+##### 🔑 Tại sao borrow checker cấm `v.push()` khi đang giữ tham chiếu phần tử `&v[0]`?
 
 ```rust
 let mut v = vec![1, 2, 3, 4, 5];
@@ -1716,7 +1718,7 @@ println!("Phần tử đầu: {first}");
 ```
 *Giải thích bản chất bộ nhớ:* Khi gọi `v.push(6)`, nếu vùng nhớ hiện tại trên heap đã đầy (`len == capacity`), vector có thể cấp phát lại và chuyển phần tử sang địa chỉ khác, khiến các tham chiếu cũ không còn hợp lệ. Khi đó, con trỏ `first` sẽ trỏ vào vùng nhớ cũ đã bị hủy (*dangling pointer*)! Borrow checker ngăn phép mượn độc quyền của `push` chồng lấn với tham chiếu còn được dùng, kể cả khi bạn biết vector hiện còn dung lượng.
 
-##### Lưu trữ nhiều kiểu dữ liệu khác nhau trong vector qua enum
+##### 🧩 Lưu trữ nhiều kiểu dữ liệu khác nhau trong vector qua enum
 
 ```rust
 #[derive(Debug)]
@@ -1738,7 +1740,7 @@ fn main() {
 
 ---
 
-#### 11.3. Bảng băm (`HashMap<K, V>`) và entry API
+#### 11.3. 🧩 Bảng băm (`HashMap<K, V>`) và entry API
 
 `HashMap<K, V>` ánh xạ khóa `K` sang giá trị `V` với thời gian tra cứu trung bình $O(1)$:
 
@@ -1767,7 +1769,7 @@ fn main() {
 
 ---
 
-#### 11.4. Thực chiến với `VecDeque`, `BTreeMap`, `HashSet` và `BinaryHeap`
+#### 11.4. 🧠 Thực chiến với `VecDeque`, `BTreeMap`, `HashSet` và `BinaryHeap`
 
 ```rust
 use std::collections::{BTreeMap, BinaryHeap, HashSet, VecDeque};
@@ -1806,11 +1808,11 @@ fn main() {
 
 <a id="chuong-12"></a>
 
-### Chương 12. Chuyển đổi kiểu dữ liệu
+### Chương 12. 🔄 Chuyển đổi kiểu dữ liệu
 
 Rust không bao giờ tự động ép kiểu ngầm định giữa các kiểu dữ liệu số để tránh mất mát độ chính xác ngoài ý muốn.
 
-#### 12.1. Ép kiểu số và nguy cơ mất dữ liệu
+#### 12.1. 🔄 Ép kiểu số và nguy cơ mất dữ liệu
 
 `as` là phép chuyển kiểu tường minh, không đồng nghĩa với chuyển đổi không mất dữ liệu. Ép số nguyên sang kiểu hẹp hơn có thể mất bit; ép số thực sang số nguyên loại phần thập phân và có quy tắc bão hòa ở biên. Khi cần phát hiện giá trị ngoài miền, ưu tiên `TryFrom`.
 
@@ -1830,7 +1832,7 @@ fn main() {
 
 ---
 
-#### 12.2. Chuyển đổi không thất bại (`From` / `Into`) và có thể thất bại (`TryFrom` / `TryInto`)
+#### 12.2. 🔄 Chuyển đổi không thất bại (`From` / `Into`) và có thể thất bại (`TryFrom` / `TryInto`)
 
 - **`From<T>` và `Into<U>`:** Dành cho các phép chuyển đổi luôn thành công. **Quy tắc vàng:** Hãy luôn ưu tiên cài đặt trait `From`, vì khi có `From`, thư viện chuẩn sẽ tự động cung cấp `Into` cho bạn thông qua Blanket Implementation!
 - **`TryFrom<T>` và `TryInto<U>`:** Dành cho các phép chuyển đổi có nguy cơ thất bại, trả về `Result<Self, Self::Error>`.
@@ -1861,14 +1863,14 @@ fn main() {
 
 <a id="chuong-13"></a>
 
-### Chương 13. Xử lý lỗi
+### Chương 13. 🛡️ Xử lý lỗi
 
 Rust phân biệt rạch ròi hai nhóm lỗi:
 
 1.  **Lỗi không thể phục hồi (Unrecoverable Errors):** Do bug lập trình (truy cập mảng vượt biên, chia cho 0). Xử lý bằng `panic!`.
 2.  **Lỗi có thể phục hồi (Recoverable Errors):** Sự cố ngoại cảnh dự kiến trước (không tìm thấy file, mất kết nối mạng). Xử lý bằng `Result<T, E>`.
 
-#### 13.1. `panic!` và truy vết ngăn xếp (`RUST_BACKTRACE=1`)
+#### 13.1. ⚠️ `panic!` và truy vết ngăn xếp (`RUST_BACKTRACE=1`)
 
 Trên nhiều target dùng `std`, `panic!` mặc định tháo ngăn xếp (*unwinding*) của luồng hiện tại và hủy các giá trị còn sống. Với `panic = "abort"`, tiến trình kết thúc ngay và không chạy các destructor như khi unwinding. Để yêu cầu backtrace trong Bash:
 
@@ -1887,7 +1889,7 @@ cargo run
 
 Mức độ chi tiết của backtrace phụ thuộc cấu hình biên dịch và ký hiệu gỡ lỗi; `RUST_BACKTRACE=full` yêu cầu bản đầy đủ hơn.
 
-#### 13.2. `Result<T, E>` và toán tử lan truyền lỗi `?`
+#### 13.2. 🔢 `Result<T, E>` và toán tử lan truyền lỗi `?`
 
 ```rust
 use std::fs::File;
@@ -1906,7 +1908,7 @@ fn read_username_from_file() -> Result<String, io::Error> {
 
 `?` cũng dùng được trong hàm trả `Option<T>`: gặp `None` thì trả sớm `None`. Nó không tự chuyển `Option` thành `Result`; dùng `ok_or` hoặc `ok_or_else` khi cần tạo lỗi. `unwrap()` và `expect()` đều có thể gây `panic`; thông báo của `expect()` nên giải thích vì sao giá trị thành công được kỳ vọng.
 
-#### 13.3. Khi nào dùng `panic!` và `Result` và xác thực bằng kiểu tùy chỉnh
+#### 13.3. ⚠️ Khi nào dùng `panic!` và `Result` và xác thực bằng kiểu tùy chỉnh
 
 | Tình huống | Lựa chọn khuyến nghị | Lý do |
 | :--- | :--- | :--- |
@@ -1915,7 +1917,7 @@ fn read_username_from_file() -> Result<String, io::Error> {
 |  Vi phạm điều kiện bất biến nội bộ (Contract violation) | `panic!` | Bất biến của API không còn được bảo đảm; quyết định dừng cần dựa trên hợp đồng đã mô tả. |
 |  Xác thực dữ liệu đầu vào của người dùng | Tạo Custom Type + trả `Result` | Đảm bảo mọi hàm nhận kiểu đó luôn nhận dữ liệu đã được kiểm chứng. |
 
-##### Mẫu thiết kế tạo kiểu tùy chỉnh để xác thực (validation custom type)
+##### 🔎 Mẫu thiết kế tạo kiểu tùy chỉnh để xác thực (validation custom type)
 
 Thay vì kiểm tra số dự đoán nằm trong khoảng $1 \dots 100$ ở khắp mọi hàm, ta đóng gói nó thành một kiểu `Guess` có trường `value` là `private`:
 
@@ -1942,15 +1944,15 @@ impl Guess {
 
 <a id="phan-vii"></a>
 
-## Phần VII. Tổ chức dự án, kiểm thử và minigrep
+## Phần VII. 🏗️ Tổ chức dự án, kiểm thử và minigrep
 
 ---
 
 <a id="chuong-14"></a>
 
-### Chương 14. Tổ chức dự án: package, crate, module và workspace
+### Chương 14. 🗂️ Tổ chức dự án: package, crate, module và workspace
 
-#### 14.1. Workspace, package, crate và module
+#### 14.1. 🗂️ Workspace, package, crate và module
 
 | Cấp tổ chức | Vai trò |
 | :--- | :--- |
@@ -1973,16 +1975,16 @@ Mỗi thư mục thành viên cần `Cargo.toml` riêng. Trong `app/Cargo.toml`,
 
 ---
 
-#### 14.2. Quy tắc riêng tư, đường dẫn (`use`, `pub use`) và tách nhiều file
+#### 14.2. 🗂️ Quy tắc riêng tư, đường dẫn (`use`, `pub use`) và tách nhiều file
 
-##### 1. Quy tắc riêng tư (privacy rules)
+##### 1. 🔎 Quy tắc riêng tư (privacy rules)
 
 - Đa số mục mặc định riêng tư trong module định nghĩa và các module con; mục của trait và biến thể của enum có quy tắc riêng.
 - Module con có thể truy cập mọi mục trong module cha, nhưng module cha chỉ truy cập được các mục có từ khóa `pub` của module con.
 - Với `pub struct`: Các trường bên trong vẫn là `private` trừ khi từng trường được gắn `pub`.
 - Với `pub enum`: **Toàn bộ các biến thể bên trong tự động là `pub`**.
 
-##### 2. Tách module thành nhiều tệp
+##### 2. 🔎 Tách module thành nhiều tệp
 
 Khi dự án lớn lên, ta tách các module ra thành các tệp riêng biệt theo cấu trúc chuẩn:
 
@@ -2007,7 +2009,7 @@ pub use crate::front_of_house::hosting::add_to_waitlist;
 
 `use` đưa tên vào phạm vi hiện tại, không sao chép mã hay tự công khai API. `pub use` vừa đưa tên vào phạm vi vừa tái xuất nó. Dùng `crate::` từ gốc crate, `self::` từ module hiện tại và `super::` từ module cha; `pub(crate)` chỉ công khai trong cùng crate.
 
-#### 14.3. Tùy biến cấu hình tối ưu hóa với release profiles
+#### 14.3. 🛠️ Tùy biến cấu hình tối ưu hóa với release profiles
 
 Trong `Cargo.toml`, bạn có thể kiểm soát chi tiết cách trình biên dịch tối ưu hóa mã máy:
 
@@ -2029,9 +2031,9 @@ Cấu hình trên là một lựa chọn để đo đạc, không phải thiết
 
 <a id="chuong-15"></a>
 
-### Chương 15. Kiểm thử tự động và tài liệu hóa
+### Chương 15. 🧪 Kiểm thử tự động và tài liệu hóa
 
-#### 15.1. Giải phẫu hàm kiểm thử và các cờ điều khiển `cargo test`
+#### 15.1. 🧪 Giải phẫu hàm kiểm thử và các cờ điều khiển `cargo test`
 
 ```rust
 pub fn add(a: i32, b: i32) -> i32 {
@@ -2055,7 +2057,7 @@ mod tests {
 }
 ```
 
-##### Các lệnh điều khiển `cargo test` chuyên sâu
+##### 🧪 Các lệnh điều khiển `cargo test` chuyên sâu
 
 ```bash
 # 1. Chạy toàn bộ bài kiểm thử song song trên nhiều luồng:
@@ -2076,7 +2078,7 @@ cargo test -- --ignored
 
 ---
 
-#### 15.2. Phân biệt unit tests và integration tests và doctests
+#### 15.2. 🧪 Phân biệt unit tests và integration tests và doctests
 
 - **Unit Tests:** Đặt ngay trong `src/` cùng file với mã nguồn bên trong module `#[cfg(test)]`. Có đặc quyền kiểm thử được cả các hàm `private` nội bộ.
 - **Integration Tests:** Đặt trong thư mục độc lập `tests/` ở gốc dự án. Mỗi tệp trong `tests/*.rs` được biên dịch như một crate riêng biệt và chỉ gọi được các API `pub` của thư viện.
@@ -2107,11 +2109,11 @@ Chạy `cargo test --doc` để kiểm tra ví dụ tài liệu và `cargo doc -
 
 <a id="chuong-16"></a>
 
-### Chương 16. Dự án 2 — Công cụ dòng lệnh minigrep
+### Chương 16. 🔍 Dự án 2 — Công cụ dòng lệnh minigrep
 
 `minigrep` tìm các dòng chứa từ khóa trong một tệp UTF-8. Dự án tách xử lý tham số và tìm kiếm vào thư viện, giữ `main` ngắn gọn, dùng kiểm thử để mô tả hành vi và báo lỗi qua stderr.
 
-#### 16.1. Thiết lập dự án
+#### 16.1. 🛠️ Thiết lập dự án
 
 ```bash
 cargo new minigrep --edition 2024
@@ -2120,7 +2122,7 @@ cd minigrep
 
 Giữ `name = "minigrep"` trong `Cargo.toml`, vì `main.rs` bên dưới dùng tên crate đó. Dự án chỉ cần thư viện chuẩn; tạo thêm `src/lib.rs`.
 
-#### 16.2. Thư viện nghiệp vụ: `src/lib.rs`
+#### 16.2. 💻 Thư viện nghiệp vụ: `src/lib.rs`
 
 ```rust
 use std::error::Error;
@@ -2233,7 +2235,7 @@ Vòng đời `'a` liên kết các lát cắt kết quả với `contents`; dữ
 
 Hàm không phân biệt hoa/thường dùng `to_lowercase`, chưa phải phép Unicode case folding hoặc chuẩn hóa đầy đủ. Nó tạo chuỗi tạm cho các dòng; đây là cách triển khai dễ hiểu, không tối ưu cho mọi ngôn ngữ và tệp lớn. Tệp được đọc toàn bộ vào bộ nhớ; để xử lý dữ liệu lớn, cân nhắc đọc theo dòng.
 
-#### 16.3. Điểm vào: `src/main.rs`
+#### 16.3. 💻 Điểm vào: `src/main.rs`
 
 ```rust
 use minigrep::Config;
@@ -2257,7 +2259,7 @@ fn main() {
 
 `env::args()` giả định tham số là Unicode hợp lệ. Công cụ cần chấp nhận mọi đường dẫn hệ điều hành nên dùng `args_os()` và `PathBuf`, đồng thời xử lý việc chuyển đổi từ khóa một cách tường minh.
 
-#### 16.4. Dữ liệu mẫu, kiểm thử và chạy
+#### 16.4. 🧪 Dữ liệu mẫu, kiểm thử và chạy
 
 Tạo `sample.txt` ở gốc dự án:
 
@@ -2290,23 +2292,23 @@ Remove-Item Env:IGNORE_CASE
 
 Kết quả gồm hai dòng đầu của `sample.txt`. Chạy với tệp không tồn tại để kiểm tra thông báo stderr và mã thoát khác 0. Khi không có dòng khớp, phiên bản học tập này kết thúc thành công mà không in dữ liệu; chưa mô phỏng đầy đủ mã thoát của lệnh `grep`.
 
-**Bài tập:** Thêm số dòng vào kết quả; viết kiểm thử trước khi chỉnh hàm tìm kiếm. Giữ phép tìm kiếm thuần túy, không đọc biến môi trường bên trong test.
+**✍️ Bài tập:** Thêm số dòng vào kết quả; viết kiểm thử trước khi chỉnh hàm tìm kiếm. Giữ phép tìm kiếm thuần túy, không đọc biến môi trường bên trong test.
 
 ---
 
 <a id="phan-viii"></a>
 
-## Phần VIII. Vòng đời, lập trình hàm và con trỏ thông minh
+## Phần VIII. 🧠 Vòng đời, lập trình hàm và con trỏ thông minh
 
 ---
 
 <a id="chuong-17"></a>
 
-### Chương 17. Vòng đời tham chiếu
+### Chương 17. ⏳ Vòng đời tham chiếu
 
 Mọi tham chiếu trong Rust đều có một **Vòng đời (Lifetime)** — là khoảng thời gian mà tham chiếu đó đảm bảo trỏ tới vùng nhớ hợp lệ. Phần lớn thời gian, trình biên dịch tự suy luận được vòng đời; nhưng khi có nhiều tham chiếu đầu vào có thể liên quan đến tham chiếu đầu ra, bạn cần chú thích bằng ký hiệu `'a` để giúp Borrow Checker xác minh tính an toàn.
 
-#### 17.1. Vòng đời và hợp đồng tham chiếu
+#### 17.1. ⏳ Vòng đời và hợp đồng tham chiếu
 
 Tham chiếu không được dùng sau khi dữ liệu mà nó trỏ tới hết vòng đời. Đoạn sau cố ý không biên dịch:
 
@@ -2339,7 +2341,7 @@ fn main() {
 
 ---
 
-#### 17.2. Lifetime trong định nghĩa struct và khối `impl`
+#### 17.2. ⏳ Lifetime trong định nghĩa struct và khối `impl`
 
 Struct có trường tham chiếu phải ghi rõ vòng đời của trường: thường là tham số như `'a`, hoặc một vòng đời cụ thể như `'static`. Ví dụ:
 
@@ -2369,7 +2371,7 @@ fn main() {
 
 ---
 
-#### 17.3. Ba quy tắc suy đoán vòng đời tự động (lifetime elision rules) và `'static`
+#### 17.3. ⏳ Ba quy tắc suy đoán vòng đời tự động (lifetime elision rules) và `'static`
 
 Trình biên dịch tự động suy luận lifetime trong chữ ký hàm theo 3 quy tắc:
 
@@ -2377,7 +2379,7 @@ Trình biên dịch tự động suy luận lifetime trong chữ ký hàm theo 3
 2. **Quy tắc 2 (Một đầu vào):** Nếu chỉ có **duy nhất 1 tham số lifetime đầu vào**, lifetime đó được gán cho toàn bộ các tham chiếu đầu ra (`fn first_word<'a>(s: &'a str) -> &'a str`).
 3. **Quy tắc 3 (Phương thức):** Nếu là phương thức có `&self` hoặc `&mut self`, lifetime của `self` được tự động gán cho toàn bộ các tham chiếu đầu ra.
 
-##### Vòng đời tĩnh `'static`
+##### ⏳ Vòng đời tĩnh `'static`
 
 Tham chiếu `&'static T` cho phép truy cập dữ liệu hợp lệ suốt chương trình, ví dụ chuỗi literal `let s: &'static str = "Hello";`. Biến chứa tham chiếu đó vẫn có thể hết phạm vi sớm.
 
@@ -2385,7 +2387,7 @@ Ràng buộc **`T: 'static`** có nghĩa kiểu không chứa tham chiếu mư�
 
 ---
 
-#### 17.4. Kết hợp chung generics, trait bounds và lifetimes trong một hàm
+#### 17.4. ⏳ Kết hợp chung generics, trait bounds và lifetimes trong một hàm
 
 Ví dụ sau kết hợp tham số kiểu, trait bound và lifetime trong cùng một chữ ký hàm:
 
@@ -2420,11 +2422,11 @@ fn main() {
 
 <a id="chuong-18"></a>
 
-### Chương 18. Closure và iterator
+### Chương 18. 🔁 Closure và iterator
 
 Rust kết hợp vẻ đẹp thanh lịch của Lập trình Hàm (*Functional Programming*) với hiệu năng cấp thấp của ngôn ngữ hệ thống.
 
-#### 18.1. Closures, chế độ bắt giữ môi trường và ba trait `FnOnce`, `FnMut`, `Fn`
+#### 18.1. 🧬 Closures, chế độ bắt giữ môi trường và ba trait `FnOnce`, `FnMut`, `Fn`
 
 **Closure (Hàm đóng)** là hàm ẩn danh có thể lưu vào biến, truyền làm tham số cho hàm khác, và đặc biệt là **có khả năng bắt giữ (capture) các biến từ phạm vi môi trường nơi nó được định nghĩa**.
 
@@ -2463,15 +2465,15 @@ fn main() {
 
 ---
 
-#### 18.2. Iterators: ba phương thức tạo lặp và xây dựng custom iterator
+#### 18.2. 🔧 Iterators: ba phương thức tạo lặp và xây dựng custom iterator
 
-##### 1. Phân biệt 3 phương thức tạo iterator cốt lõi
+##### 1. ⚖️ Phân biệt 3 phương thức tạo iterator cốt lõi
 
 - **`.iter()`:** Tạo bộ lặp trả về tham chiếu bất biến **`&T`** (giữ nguyên tập hợp gốc).
 - **`.iter_mut()`:** Tạo bộ lặp trả về tham chiếu khả biến **`&mut T`** (sửa trực tiếp phần tử tại chỗ).
 - **`.into_iter()`:** Tiêu thụ đối tượng nhận theo triển khai `IntoIterator`. Với `Vec<T>` nhận bằng giá trị, nó cho phần tử `T`; với `&Vec<T>` hoặc `&[T]`, nó cho `&T` và không lấy quyền sở hữu tập hợp gốc.
 
-##### 2. Tự xây dựng một cấu trúc iterator tùy chỉnh từ con số 0
+##### 2. 🔁 Tự xây dựng một cấu trúc iterator tùy chỉnh từ con số 0
 
 Để biến bất kỳ struct nào thành một Iterator có thể dùng với `for`, `.map()`, `.filter()`, `.zip()`, bạn chỉ cần cài đặt duy nhất phương thức `next()` của trait `Iterator`:
 
@@ -2517,11 +2519,11 @@ Iterator thường **lười**: `map` và `filter` không duyệt hết dữ li�
 
 <a id="chuong-19"></a>
 
-### Chương 19. Con trỏ thông minh và khả biến nội tại
+### Chương 19. 🧭 Con trỏ thông minh và khả biến nội tại
 
 Con trỏ thông minh là các kiểu cung cấp hành vi quản lý dữ liệu qua một giao diện giống con trỏ, chẳng hạn sở hữu độc quyền, đếm tham chiếu hoặc quản lý mượn. `Deref` hỗ trợ truy cập dữ liệu đích; `Drop` tùy biến việc dọn tài nguyên. Không phải kiểu nào trong nhóm công cụ quản lý dữ liệu dưới đây cũng trực tiếp triển khai cả hai trait. `RefCell` là một container cho tính khả biến nội tại, thường được dùng cùng con trỏ thông minh.
 
-#### 19.1. Chọn kiểu quản lý dữ liệu
+#### 19.1. 🧩 Chọn kiểu quản lý dữ liệu
 
 | Kiểu | Sở hữu và truy cập | Điều kiện đa luồng cần nhớ |
 | :--- | :--- | :--- |
@@ -2535,7 +2537,7 @@ Khi có quyền truy cập duy nhất, `Rc::get_mut` hoặc `Arc::get_mut` có t
 
 ---
 
-#### 19.2. Bố cục và kiểm tra mượn khi chạy
+#### 19.2. 🧪 Bố cục và kiểm tra mượn khi chạy
 
 | Kiểu | Mô hình lưu trữ | Điều không nên suy diễn |
 | :--- | :--- | :--- |
@@ -2547,7 +2549,7 @@ Khi có quyền truy cập duy nhất, `Rc::get_mut` hoặc `Arc::get_mut` có t
 
 ---
 
-#### 19.3. Minh họa Deref và Drop bằng MyBox
+#### 19.3. 🧭 Minh họa Deref và Drop bằng MyBox
 
 `MyBox<T>` dưới đây chứa `T` trực tiếp, không cấp phát heap như `Box<T>`. Ví dụ chỉ minh họa cơ chế trait. Khi `MyBox` bị hủy, Rust gọi `drop` rồi tiếp tục hủy các trường của nó.
 
@@ -2589,7 +2591,7 @@ fn main() {
 
 ---
 
-#### 19.4. Kết hợp `Rc<RefCell<T>>` và chống rò rỉ bộ nhớ với `Weak<T>`
+#### 19.4. ⚠️ Kết hợp `Rc<RefCell<T>>` và chống rò rỉ bộ nhớ với `Weak<T>`
 
 Khi xây dựng cấu trúc Cây (*Tree*) có nút cha trỏ xuống nút con và nút con trỏ ngược lên nút cha:
 
@@ -2633,7 +2635,7 @@ fn main() {
 
 ---
 
-#### 19.5. Tối ưu hóa cấp phát với `Cow<'a, B>` (Clone-on-write)
+#### 19.5. 🧭 Tối ưu hóa cấp phát với `Cow<'a, B>` (Clone-on-write)
 
 `std::borrow::Cow` (clone-on-write) biểu diễn dữ liệu ở một trong hai dạng:
 
@@ -2660,8 +2662,8 @@ fn main() {
 }
 ```
 
-> **Thử thách tư duy rustacean (phần viii)**
-> **Câu hỏi:** Điều gì sẽ xảy ra khi chạy đoạn mã sử dụng `RefCell` dưới đây?
+> **🧠 Thử thách tư duy rustacean (phần viii)**
+> **❓ Câu hỏi:** Điều gì sẽ xảy ra khi chạy đoạn mã sử dụng `RefCell` dưới đây?
 > ```rust,should_panic
 > use std::cell::RefCell;
 > fn main() {
@@ -2671,21 +2673,21 @@ fn main() {
 >     println!("{r1:?}, {r2:?}");
 > }
 > ```
-> **Giải đáp:** Chương trình sẽ **biên dịch thành công** nhưng bị **`panic!` ngay tại thời điểm chạy (runtime)** với thông báo: `already borrowed: BorrowMutError`. Lý do là `RefCell<T>` chuyển việc kiểm tra quy tắc mượn từ lúc biên dịch sang lúc chạy: khi biến `r1` (`Ref<Vec<i32>>`) vẫn đang còn hiệu lực trong scope, việc gọi `data.borrow_mut()` để lấy tham chiếu khả biến sẽ vi phạm quy tắc độc quyền và kích hoạt `panic!`.
+> **💡 Giải đáp:** Chương trình sẽ **biên dịch thành công** nhưng bị **`panic!` ngay tại thời điểm chạy (runtime)** với thông báo: `already borrowed: BorrowMutError`. Lý do là `RefCell<T>` chuyển việc kiểm tra quy tắc mượn từ lúc biên dịch sang lúc chạy: khi biến `r1` (`Ref<Vec<i32>>`) vẫn đang còn hiệu lực trong scope, việc gọi `data.borrow_mut()` để lấy tham chiếu khả biến sẽ vi phạm quy tắc độc quyền và kích hoạt `panic!`.
 
 ---
 
 <a id="phan-ix"></a>
 
-## Phần IX. Đồng thời và bất đồng bộ
+## Phần IX. ⚡ Đồng thời và bất đồng bộ
 
 ---
 
 <a id="chuong-20"></a>
 
-### Chương 20. Lập trình đa luồng
+### Chương 20. 🧵 Lập trình đa luồng
 
-#### 20.1. Tạo luồng (`thread::spawn`), luồng theo phạm vi (`thread::scope`) và kênh `mpsc`
+#### 20.1. 🧵 Tạo luồng (`thread::spawn`), luồng theo phạm vi (`thread::scope`) và kênh `mpsc`
 
 ```rust
 use std::sync::mpsc;
@@ -2720,7 +2722,7 @@ fn main() {
 
 ---
 
-#### 20.2. Chia sẻ trạng thái đa luồng với `Arc<Mutex<T>>` và xử lý poisoned mutex
+#### 20.2. ⚠️ Chia sẻ trạng thái đa luồng với `Arc<Mutex<T>>` và xử lý poisoned mutex
 
 ```rust
 use std::sync::{Arc, Mutex};
@@ -2751,7 +2753,7 @@ fn main() {
 
 ---
 
-#### 20.3. Khóa đọc-ghi (`RwLock<T>`) và kiểu nguyên tử không khóa (`Atomics`)
+#### 20.3. 🧵 Khóa đọc-ghi (`RwLock<T>`) và kiểu nguyên tử không khóa (`Atomics`)
 
 1. **`RwLock<T>` (Read-Write Lock):** Trong khi `Mutex<T>` chỉ cho phép duy nhất 1 luồng truy cập tại một thời điểm (dù chỉ để đọc), `RwLock<T>` cho phép **nhiều luồng cùng đọc đồng thời (`.read()`)** hoặc **duy nhất 1 luồng ghi độc quyền (`.write()`)**. Có thể phù hợp khi đọc nhiều, ghi ít; hiệu năng và tính công bằng tùy triển khai, nên đo thay vì mặc định nó nhanh hơn `Mutex`.
 2. **Kiểu Nguyên Tử (`std::sync::atomic`):** Cung cấp các thao tác nguyên tử trên những kiểu được target hỗ trợ. Tránh được một số nhu cầu dùng mutex nhưng vẫn có chi phí đồng bộ và tranh chấp bộ nhớ đệm; thuật toán ghép nhiều thao tác nguyên tử chưa chắc đúng nếu thiếu quy tắc thứ tự bộ nhớ:
@@ -2782,7 +2784,7 @@ fn main() {
 }
 ```
 
-##### Hai marker traits cốt lõi: `Send` và `Sync`
+##### 🧬 Hai marker traits cốt lõi: `Send` và `Sync`
 
 -  **`Send`:** Đánh dấu kiểu dữ liệu an toàn khi **chuyển giao quyền sở hữu (Move) giữa các luồng**.
 -  **`Sync`:** Đánh dấu kiểu dữ liệu an toàn khi **chia sẻ tham chiếu bất biến (`&T`) giữa nhiều luồng cùng lúc** ($T$ là `Sync` $\iff \&T$ là `Send`).
@@ -2795,9 +2797,9 @@ Safe Rust có thể ngăn data race nhưng vẫn có deadlock nếu các luồng
 
 <a id="chuong-21"></a>
 
-### Chương 21. Lập trình bất đồng bộ
+### Chương 21. ⚡ Lập trình bất đồng bộ
 
-#### 21.1. Luồng hệ điều hành, task và future
+#### 21.1. 🧵 Luồng hệ điều hành, task và future
 
 | Đặc điểm | Luồng hệ điều hành | Task bất đồng bộ |
 | :--- | :--- | :--- |
@@ -2824,7 +2826,7 @@ pub trait Future {
 
 `Pin<P>` bảo vệ việc giữ nguyên vị trí của **giá trị đích** khi kiểu cần pinning, không nhất thiết cố định chính handle con trỏ. Điều này quan trọng với một số future có trạng thái tự tham chiếu. Kiểu `Unpin` không cần hạn chế đó. Thư viện và `.await` thường xử lý chi tiết pinning giúp người dùng.
 
-#### 21.2. Thiết lập Tokio
+#### 21.2. 🛠️ Thiết lập Tokio
 
 ```bash
 cargo new async_demo --edition 2024
@@ -2846,7 +2848,7 @@ tokio = { version = "=1.43.0", features = ["macros", "rt-multi-thread", "sync", 
 
 Đây là phiên bản cố định cho các API trong ví dụ, không phải tuyên bố phiên bản mới nhất. Khi nâng thư viện, đọc ghi chú phát hành và chạy lại kiểm thử. Các ví dụ ở mục 21.3 và 21.4 là hai nội dung `src/main.rs` thay thế cho nhau.
 
-#### 21.3. Join!, select!, spawn và kênh bất đồng bộ
+#### 21.3. ⚡ Join!, select!, spawn và kênh bất đồng bộ
 
 ```rust
 use tokio::sync::mpsc;
@@ -2906,7 +2908,7 @@ Trong mã chạy trên Tokio, dùng `tokio::time::sleep(...).await` cho việc c
 
 Tham khảo [Tokio tutorial](https://tokio.rs/tokio/tutorial), [spawning](https://tokio.rs/tokio/tutorial/spawning) và [select/cancellation](https://tokio.rs/tokio/tutorial/select).
 
-#### 21.4. Async trong trait và async closure
+#### 21.4. ⚡ Async trong trait và async closure
 
 `async fn` trong trait được ổn định từ Rust 1.75; async closure và các trait gọi tương ứng được ổn định từ Rust 1.85. Đây là các mốc phiên bản trình biên dịch, không phải mọi tính năng đều chỉ dùng được trong Edition 2024.
 
@@ -2953,15 +2955,15 @@ Trait chứa phương thức `async fn` như trên không tự dùng được qu
 
 <a id="phan-x"></a>
 
-## Phần X. Chủ đề nâng cao và máy chủ web
+## Phần X. 🚀 Chủ đề nâng cao và máy chủ web
 
 ---
 
 <a id="chuong-22"></a>
 
-### Chương 22. Unsafe Rust, FFI và kiểu nâng cao
+### Chương 22. ⚠️ Unsafe Rust, FFI và kiểu nâng cao
 
-#### 22.1. Ranh giới của unsafe
+#### 22.1. ⚠️ Ranh giới của unsafe
 
 `unsafe` không tắt borrow checker và không có nghĩa mọi câu lệnh trong khối đều nguy hiểm. Nó đánh dấu nơi người viết phải bảo đảm những điều kiện mà trình biên dịch không chứng minh thay được. Các nhóm thao tác thường gặp gồm:
 
@@ -2973,7 +2975,7 @@ Trait chứa phương thức `async fn` như trên không tự dùng được qu
 
 Trong Edition 2024, khối khai báo ngoại ngữ phải dùng `unsafe extern`; tạo tham chiếu tới `static mut` bị lint `static_mut_refs` từ chối mặc định. Điều này không cấm mọi thao tác trên biến tĩnh khả biến và cũng không làm con trỏ thô tự trở nên an toàn. Ưu tiên kiểu đồng bộ như `Mutex`, atomics, `OnceLock` hoặc `LazyLock` khi chúng phù hợp.
 
-#### 22.2. Con trỏ thô và FFI
+#### 22.2. ⚠️ Con trỏ thô và FFI
 
 Ví dụ sau dùng thư viện C trên target có C runtime cung cấp `abs` (chẳng hạn các môi trường desktop thông dụng). Việc liên kết thư viện ngoại vi khác có thể cần cấu hình linker và build script riêng.
 
@@ -3014,7 +3016,7 @@ Toán tử `&raw const`/`&raw mut` có từ Rust 1.82, không riêng Edition 202
 
 Trong một `unsafe fn`, nên dùng khối `unsafe {}` nhỏ cho từng thao tác và ghi rõ lập luận `SAFETY`. Edition 2024 bật cảnh báo `unsafe_op_in_unsafe_fn` mặc định. Một hàm bọc chỉ được công khai là **safe** nếu nó bảo đảm mọi điều kiện an toàn cho mọi cách gọi hợp lệ của API; nếu vẫn phụ thuộc nghĩa vụ của bên gọi, giữ `unsafe fn` và tài liệu hóa mục `# Safety`.
 
-#### 22.3. Bí danh kiểu, kiểu ! và kiểu có kích thước động
+#### 22.3. ⚠️ Bí danh kiểu, kiểu ! và kiểu có kích thước động
 
 **Bí danh kiểu** tạo tên khác cho cùng kiểu, không tạo kiểu mới như newtype:
 
@@ -3051,15 +3053,15 @@ Tham khảo [Rust Reference: unsafe](https://doc.rust-lang.org/reference/unsafe-
 
 <a id="chuong-23"></a>
 
-### Chương 23. Siêu lập trình với macro
+### Chương 23. 🪄 Siêu lập trình với macro
 
 **macro** là kỹ thuật viết mã sinh ra mã (*code that writes code*) ngay tại thời điểm biên dịch, giúp mở rộng cú pháp ngôn ngữ và giảm mã lặp lại (*boilerplate*).
 
-#### 23.1. Declarative macros (`macro_rules!`) và các bộ chỉ định mẫu
+#### 23.1. 🪄 Declarative macros (`macro_rules!`) và các bộ chỉ định mẫu
 
 Declarative macro hoạt động tương tự như biểu thức `match`, nhưng thay vì so khớp giá trị lúc chạy, nó **so khớp cấu trúc cây cú pháp Rust tại thời điểm biên dịch**.
 
-##### Các bộ chỉ định phân mảnh cú pháp (fragment specifiers) quan trọng
+##### 🔎 Các bộ chỉ định phân mảnh cú pháp (fragment specifiers) quan trọng
 
 - `$x:expr`: Một biểu thức bất kỳ (ví dụ: `1 + 2`, `func()`, `"hello"`).
 - `$i:ident`: Một tên định danh biến, hàm hoặc kiểu (ví dụ: `my_var`, `User`).
@@ -3099,13 +3101,13 @@ fn main() {
 
 ---
 
-#### 23.2. Procedural macro: một workspace hoàn chỉnh
+#### 23.2. 🪄 Procedural macro: một workspace hoàn chỉnh
 
 Procedural macro nhận và sinh `proc_macro::TokenStream` trong quá trình biên dịch. Có ba nhóm: derive macro, attribute macro và function-like macro. Chúng được định nghĩa trong crate có `proc-macro = true`; `syn` và `quote` là các thư viện hỗ trợ phổ biến, không phải yêu cầu bắt buộc của ngôn ngữ.
 
 Ví dụ sau tạo ba package: một thư viện định nghĩa trait, một thư viện procedural macro và một ứng dụng dùng chúng.
 
-##### Thiết lập workspace
+##### 🛠️ Thiết lập workspace
 
 Tạo thư mục `macro_demo`, rồi tạo các package bên trong:
 
@@ -3125,7 +3127,7 @@ members = ["hello_macro", "hello_macro_derive", "demo"]
 resolver = "3"
 ```
 
-##### Trait: `hello_macro/src/lib.rs`
+##### 🪄 Trait: `hello_macro/src/lib.rs`
 
 ```rust
 pub trait HelloMacro {
@@ -3135,7 +3137,7 @@ pub trait HelloMacro {
 
 Giữ manifest do Cargo tạo cho `hello_macro`; thư viện này không cần phụ thuộc ngoài.
 
-##### Manifest: `hello_macro_derive/Cargo.toml`
+##### 🛠️ Manifest: `hello_macro_derive/Cargo.toml`
 
 ```toml
 [package]
@@ -3152,7 +3154,7 @@ syn = "2.0"
 quote = "1.0"
 ```
 
-##### Macro: `hello_macro_derive/src/lib.rs`
+##### 🪄 Macro: `hello_macro_derive/src/lib.rs`
 
 ```rust
 use proc_macro::TokenStream;
@@ -3180,7 +3182,7 @@ pub fn hello_macro_derive(input: TokenStream) -> TokenStream {
 
 `split_for_impl` giữ tham số generic và mệnh đề `where`; bỏ chúng sẽ khiến derive thất bại trên kiểu generic. Mã sinh ra dùng đường dẫn tuyệt đối đến trait. Bản học tập này yêu cầu bên dùng giữ tên phụ thuộc `hello_macro`; nếu cho phép đổi tên phụ thuộc, thư viện macro cần thêm cơ chế phân giải tên crate phù hợp.
 
-##### Manifest: `demo/Cargo.toml`
+##### 🛠️ Manifest: `demo/Cargo.toml`
 
 ```toml
 [package]
@@ -3194,7 +3196,7 @@ hello_macro = { path = "../hello_macro" }
 hello_macro_derive = { path = "../hello_macro_derive" }
 ```
 
-##### Ứng dụng: `demo/src/main.rs`
+##### 💻 Ứng dụng: `demo/src/main.rs`
 
 ```rust
 use hello_macro::HelloMacro;
@@ -3224,11 +3226,11 @@ Kết quả gồm `Xin chào từ kiểu Pancakes!` và `Xin chào từ kiểu W
 
 <a id="chuong-24"></a>
 
-### Chương 24. Dự án 3 — Máy chủ web với thread pool
+### Chương 24. 🌐 Dự án 3 — Máy chủ web với thread pool
 
 Dự án kết hợp TCP, nhóm luồng (*thread pool*), kênh truyền việc, `Arc<Mutex<T>>` và `Drop`. Máy chủ xử lý một tập con nhỏ của yêu cầu HTTP/1.1 để học cách phối hợp các thành phần; đây không phải triển khai HTTP đầy đủ hay máy chủ dùng trực tiếp cho môi trường vận hành thực tế.
 
-#### 24.1. Tạo dự án
+#### 24.1. 🛠️ Tạo dự án
 
 ```bash
 cargo new web_server --edition 2024
@@ -3245,7 +3247,7 @@ Giữ `name = "web_server"` trong manifest. Không cần crate ngoài. Chuẩn b
 | `hello.html` | Nội dung phản hồi thành công |
 | `404.html` | Nội dung khi không tìm thấy đường dẫn |
 
-#### 24.2. Thread pool: `src/lib.rs`
+#### 24.2. 🧵 Thread pool: `src/lib.rs`
 
 ```rust
 use std::sync::{mpsc, Arc, Mutex};
@@ -3358,7 +3360,7 @@ Mỗi worker giữ khóa chỉ trong lúc chờ/lấy một công việc; khóa 
 
 Đóng sender cho phép các worker xử lý nốt hàng đợi rồi thoát khi `recv` báo kênh đóng. `Drop` chờ chúng bằng `join`. Cơ chế này giả định các job kết thúc; một job bị treo có thể khiến quá trình tắt chờ mãi. Bản đơn giản này không tạo lại worker sau panic, không bảo đảm chạy đủ job nếu toàn bộ worker đã chết và không tự bắt tín hiệu Ctrl+C.
 
-#### 24.3. Nội dung html
+#### 24.3. 🌐 Nội dung html
 
 `hello.html`:
 
@@ -3394,7 +3396,7 @@ Mỗi worker giữ khóa chỉ trong lúc chờ/lấy một công việc; khóa 
 </html>
 ```
 
-#### 24.4. Máy chủ tcp: `src/main.rs`
+#### 24.4. 🌐 Máy chủ tcp: `src/main.rs`
 
 ```rust
 use std::io::{self, BufRead, BufReader, Read, Write};
@@ -3489,7 +3491,7 @@ fn handle_connection(mut stream: TcpStream) -> io::Result<()> {
 
 Bản học tập chưa phân tích và kiểm tra đầy đủ header HTTP, không xử lý request body, keep-alive, TLS hay mọi dạng lỗi giao thức. Timeout ở đây áp dụng cho thao tác I/O, không phải hạn chót tuyệt đối cho toàn bộ yêu cầu. Các giới hạn byte và hàng đợi giúp minh họa quản lý tài nguyên, không biến ví dụ thành máy chủ hoàn chỉnh về bảo mật hoặc tuân thủ giao thức.
 
-#### 24.5. Chạy thử và quan sát quá trình tắt
+#### 24.5. ▶️ Chạy thử và quan sát quá trình tắt
 
 ```bash
 cargo test
@@ -3510,21 +3512,21 @@ curl -i http://127.0.0.1:7878/
 
 Để quan sát xử lý đồng thời, khởi động lại máy chủ, gọi `/sleep` ở một terminal và ngay sau đó gọi `/` ở terminal khác. Yêu cầu `/` có thể hoàn tất trước yêu cầu đang ngủ nếu còn worker rảnh. Nếu đổi vòng nhận thành `loop`, cần thiết kế thêm cơ chế dừng chủ động; nhấn Ctrl+C mặc định không chứng minh `Drop` sẽ chạy.
 
-**Bài tập:** Thêm giới hạn thời gian cho toàn yêu cầu, kiểm thử lỗi kết nối và cơ chế dừng có tín hiệu. Khi xây dựng dịch vụ thật, dùng thư viện HTTP có bộ phân tích giao thức và chính sách vận hành phù hợp.
+**✍️ Bài tập:** Thêm giới hạn thời gian cho toàn yêu cầu, kiểm thử lỗi kết nối và cơ chế dừng có tín hiệu. Khi xây dựng dịch vụ thật, dùng thư viện HTTP có bộ phân tích giao thức và chính sách vận hành phù hợp.
 
 ---
 
 <a id="phan-xi"></a>
 
-## Phần XI. Phụ lục tra cứu
+## Phần XI. 📚 Phụ lục tra cứu
 
 ---
 
 <a id="phu-luc-a"></a>
 
-### Phụ lục A. Từ khóa và định danh thô
+### Phụ lục A. 🔑 Từ khóa và định danh thô
 
-#### 1. Các từ khóa đang sử dụng (keywords currently in use)
+#### 1. 🌐 Các từ khóa đang sử dụng (keywords currently in use)
 
 |  Từ khóa |  Ý nghĩa và Công dụng chính |
 | :--- | :--- |
@@ -3568,7 +3570,7 @@ curl -i http://127.0.0.1:7878/
 
 `union` là từ khóa yếu: nó có nghĩa đặc biệt trong ngữ cảnh khai báo union. `macro_rules`, `raw` và `safe` cũng có ý nghĩa đặc biệt trong các ngữ cảnh tương ứng; chẳng hạn `safe` dùng cho mục trong khối `unsafe extern`. Không coi mọi từ này là từ khóa cấm dùng ở mọi vị trí.
 
-#### 2. Từ khóa dự phòng (reserved keywords) và định danh thô (`r#`)
+#### 2. 🌐 Từ khóa dự phòng (reserved keywords) và định danh thô (`r#`)
 
 - **Từ khóa dự phòng:** `abstract`, `become`, `box`, `do`, `final`, **`gen`** *(mới từ Rust 2024)*, `macro`, `override`, `priv`, `try`, `typeof`, `unsized`, `virtual`, `yield`.
 - **Định danh thô (`Raw Identifiers r#`):** Cho phép sử dụng từ khóa làm tên biến hoặc tên hàm (rất hữu ích khi tích hợp với thư viện ngoài hoặc JSON có trường tên `match` hay `type`):
@@ -3582,7 +3584,7 @@ curl -i http://127.0.0.1:7878/
 
 <a id="phu-luc-b"></a>
 
-### Phụ lục B. Toán tử và ký hiệu cú pháp
+### Phụ lục B. 🔣 Toán tử và ký hiệu cú pháp
 
 |  Ký hiệu |  Ý nghĩa trong ngữ cảnh Rust |
 | :--- | :--- |
@@ -3617,7 +3619,7 @@ Không nhầm `&&` với `&`: một toán tử logic ngắn mạch, toán tử c
 
 <a id="phu-luc-c"></a>
 
-### Phụ lục C. Các trait có thể dẫn xuất
+### Phụ lục C. 🧬 Các trait có thể dẫn xuất
 
 `#[derive(...)]` sinh triển khai trait theo quy tắc xác định. Việc derive chỉ thành công khi kiểu và các trường thỏa những điều kiện cần thiết.
 
@@ -3659,9 +3661,9 @@ fn main() {
 
 <a id="phu-luc-d"></a>
 
-### Phụ lục D. Công cụ phát triển và hệ sinh thái crate
+### Phụ lục D. 🧰 Công cụ phát triển và hệ sinh thái crate
 
-#### 1. Công cụ phát triển
+#### 1. 🌐 Công cụ phát triển
 
 | Công cụ | Mục đích |
 | :--- | :--- |
@@ -3685,7 +3687,7 @@ rustup +nightly component add miri
 cargo +nightly miri test
 ```
 
-#### 2. Các crate thường gặp
+#### 2. 🌐 Các crate thường gặp
 
 | Nhu cầu | Crate | Vai trò |
 | :--- | :--- | :--- |
@@ -3704,7 +3706,7 @@ Danh sách là điểm bắt đầu để tìm hiểu, không phải xếp hạn
 
 <a id="phu-luc-e"></a>
 
-### Phụ lục E. Rust editions và chuyển đổi dự án
+### Phụ lục E. 📅 Rust editions và chuyển đổi dự án
 
 Edition là tập quy tắc tương thích của ngôn ngữ, được chọn riêng cho từng package bằng `edition` trong `Cargo.toml`. Các crate ở edition khác nhau vẫn có thể phụ thuộc nhau. Phiên bản trình biên dịch mới thường hỗ trợ nhiều edition cũ; edition mới không có nghĩa mọi tính năng phát hành cùng thời điểm chỉ dùng được ở edition đó.
 
@@ -3715,7 +3717,7 @@ Edition là tập quy tắc tương thích của ngôn ngữ, được chọn ri
 | 2021 | Rust 1.56 |
 | 2024 | Rust 1.85.0, phát hành ngày 20/02/2025 |
 
-#### 1. Một số thay đổi riêng của edition 2024
+#### 1. 🌐 Một số thay đổi riêng của edition 2024
 
 - Quy tắc bắt giữ của return-position `impl Trait` mở rộng đối với các tham số generic trong phạm vi; `use<...>` cho phép điều khiển chính xác trong những ngữ cảnh được hỗ trợ.
 - Khối ngoại ngữ cần `unsafe extern`; các thuộc tính như `no_mangle` cần dạng `#[unsafe(no_mangle)]`. Lint `unsafe_op_in_unsafe_fn` cảnh báo mặc định, còn `static_mut_refs` từ chối mặc định.
@@ -3725,7 +3727,7 @@ Edition là tập quy tắc tương thích của ngôn ngữ, được chọn ri
 
 Đây là các điểm cần chú ý, không phải danh sách đầy đủ. Tham khảo [Rust 2024 Edition Guide](https://doc.rust-lang.org/edition-guide/rust-2024/index.html).
 
-#### 2. Phân biệt mốc ổn định tính năng với edition
+#### 2. ⚖️ Phân biệt mốc ổn định tính năng với edition
 
 | Tính năng | Mốc ổn định | Ghi chú |
 | :--- | :--- | :--- |
@@ -3735,7 +3737,7 @@ Edition là tập quy tắc tương thích của ngôn ngữ, được chọn ri
 | `&raw const`, `&raw mut` | Rust 1.82 | Tạo con trỏ thô mà không qua tham chiếu trung gian |
 | Async closure và `AsyncFn*` | Rust 1.85 | Phát hành cùng Rust 2024 nhưng không chỉ giới hạn trong edition đó |
 
-#### 3. Quy trình chuyển dự án từ edition 2021 sang 2024
+#### 3. 🌐 Quy trình chuyển dự án từ edition 2021 sang 2024
 
 Trước hết lưu hoặc commit trạng thái đang làm việc và bảo đảm dự án đang biên dịch được. Khi manifest vẫn ghi edition cũ, chạy:
 
@@ -3757,7 +3759,7 @@ Kiểm tra thêm các tổ hợp features và target thực sự được dự �
 
 <a id="phu-luc-f"></a>
 
-### Phụ lục F. Quy ước đặt tên
+### Phụ lục F. 📏 Quy ước đặt tên
 
 |  Thực thể mã nguồn |  Quy ước đặt tên |  Ví dụ chuẩn |
 | :--- | :--- | :--- |
@@ -3775,9 +3777,9 @@ Kiểm tra thêm các tổ hợp features và target thực sự được dự �
 
 <a id="phu-luc-g"></a>
 
-### Phụ lục G. Thuật ngữ và nguyên tắc thực hành
+### Phụ lục G. 📖 Thuật ngữ và nguyên tắc thực hành
 
-#### 1. Thuật ngữ anh–việt
+#### 1. 🌐 Thuật ngữ anh–việt
 
 | Thuật ngữ | Cách hiểu trong sách |
 | :--- | :--- |
@@ -3801,7 +3803,7 @@ Kiểm tra thêm các tổ hợp features và target thực sự được dự �
 | Concurrency / parallelism | Đồng thời / song song |
 | Panic | Cơ chế báo lỗi khiến luồng tháo ngăn xếp hoặc tiến trình abort theo cấu hình |
 
-#### 2. Mười nguyên tắc thực hành
+#### 2. 🌐 Mười nguyên tắc thực hành
 
 1. Đọc kỹ thông báo lỗi và xem nó chỉ ra ràng buộc nào. Borrow checker có thể từ chối một thiết kế an toàn nhưng chưa được biểu đạt theo cách nó chứng minh được; hãy làm rõ quyền sở hữu.
 2. Dùng `let` làm mặc định; thêm `mut` khi cần gán lại hoặc sửa dữ liệu trực tiếp.
@@ -3818,7 +3820,7 @@ Kiểm tra thêm các tổ hợp features và target thực sự được dự �
 
 <a id="tai-lieu-tham-khao"></a>
 
-## Tài liệu tham khảo
+## 📚 Tài liệu tham khảo
 
 Các nguồn dưới đây phục vụ đối chiếu khái niệm, API và thay đổi phiên bản. Với thông tin phụ thuộc phiên bản, ưu tiên tài liệu đúng phiên bản mà dự án sử dụng.
 
@@ -3834,13 +3836,13 @@ Các nguồn dưới đây phục vụ đối chiếu khái niệm, API và thay
 10. [Miri](https://github.com/rust-lang/miri) — phạm vi và cách sử dụng công cụ kiểm tra hành vi không xác định.
 11. [OnceLock](https://doc.rust-lang.org/std/sync/struct.OnceLock.html) và [LazyLock](https://doc.rust-lang.org/std/sync/struct.LazyLock.html) — điều kiện sử dụng và mốc ổn định API.
 
-**Phạm vi kiểm tra bản hiệu đính:** Đã rà soát nội dung, đối chiếu các điểm kỹ thuật dễ nhầm với nguồn chính thức và kiểm tra cấu trúc Markdown, liên kết nội bộ, cấu hình TOML. Môi trường biên tập không có `rustc`/`cargo`, vì vậy chưa biên dịch và chạy trực tiếp toàn bộ ví dụ. Các lệnh cùng kết quả mong đợi trong từng dự án là hướng dẫn kiểm chứng, không phải báo cáo đã chạy thành công.
+**📋 Phạm vi kiểm tra bản hiệu đính:** Đã rà soát nội dung, đối chiếu các điểm kỹ thuật dễ nhầm với nguồn chính thức và kiểm tra cấu trúc Markdown, liên kết nội bộ, cấu hình TOML. Môi trường biên tập không có `rustc`/`cargo`, vì vậy chưa biên dịch và chạy trực tiếp toàn bộ ví dụ. Các lệnh cùng kết quả mong đợi trong từng dự án là hướng dẫn kiểm chứng, không phải báo cáo đã chạy thành công.
 
 ---
 
-## Liên hệ và đóng góp
+## 📬 Liên hệ và đóng góp
 
-Giáo trình do **Thái Việt** biên soạn. Khi báo lỗi, vui lòng nêu chương/mục, phiên bản `rustc`, edition, mã tái hiện và thông báo lỗi đầy đủ.
+Giáo trình **RUST_OZ** do **Thái Việt** biên soạn. Khi báo lỗi, vui lòng nêu chương/mục, phiên bản `rustc`, edition, mã tái hiện và thông báo lỗi đầy đủ.
 
 - **Email:** [ozsxe@icloud.com](mailto:ozsxe@icloud.com)
 - **GitHub:** [github.com/ozsx](https://github.com/ozsx)
